@@ -1,12 +1,15 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import { SEED_PROVIDERS } from './shared/data/providers'
 
-/** Pages 项目页的仓库路径前缀；绑自定义域名时改成 '/'（也可用 NUXT_APP_BASE_URL 覆盖） */
-const baseURL = process.env.NUXT_APP_BASE_URL || '/fde-aff-vpsls/'
+/**
+ * 站点根路径前缀。默认 '/' —— Pages 已绑自定义域名（vps.020417.xyz），产物挂在域名根目录。
+ * 若改用仓库路径 Pages（https://<用户>.github.io/<仓库>/），把 NUXT_APP_BASE_URL 设成 '/<仓库名>/'。
+ */
+const baseURL = process.env.NUXT_APP_BASE_URL || '/'
 
 /**
  * 静态站配置（GitHub Pages）：
- *   app.baseURL —— Pages 项目页的仓库路径前缀（见上方 baseURL）；绑自定义域名时改成 '/'
+ *   app.baseURL —— 站点根路径前缀（见上方 baseURL）
  *   nitro.preset —— static：构建产物是纯静态文件，扔到任意静态托管都能跑
  *   prerender    —— 预渲染所有页面 + 每个厂商的 /go/<slug> 出口跳转页
  *

@@ -116,4 +116,4 @@ data/           # 管道产物（随仓库提交）
 
 ## 部署
 
-GitHub Pages，详见 [DEPLOY.md](DEPLOY.md)。要点：`pnpm run generate` 产物在 `.output/public`，Actions 自动上传发布；`app.baseURL` 默认 `/fde-aff-vpsls/`（Pages 项目页路径），绑自定义域名时改成 `/`。
+GitHub Pages，详见 [DEPLOY.md](DEPLOY.md)。要点：`pnpm run generate` 产物在 `.output/public`，Actions 自动上传发布；`app.baseURL` 默认 `'/'`（站点挂在自定义域名根路径），改用仓库路径 Pages 时设成 `'/<仓库名>/'`。

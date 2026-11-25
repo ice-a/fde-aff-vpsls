@@ -5,8 +5,8 @@
 ## 一、一次性设置
 
 1. 仓库 **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
-2. `app.baseURL` 保持默认 `/fde-aff-vpsls/`（Pages 项目页 = `https://<用户>.github.io/<仓库>/`）。
-   - 绑自定义域名：在 Pages 设置里填域名 + 配好 CNAME/DNS 后，把 `nuxt.config.ts` 的 `baseURL` 改成 `'/'`（或给构建环境加 `NUXT_APP_BASE_URL=/`）。
+2. `app.baseURL` 默认 `'/'`（站点挂在域名根路径）。当前 Pages 绑的是自定义域名 `https://vps.020417.xyz/`，产物直接在根目录，**不要**加仓库路径前缀。
+   - 若以后改用仓库路径 Pages（`https://<用户>.github.io/<仓库>/`），把 `nuxt.config.ts` 的 `baseURL` 改成 `'/<仓库名>/'`（或给构建环境加 `NUXT_APP_BASE_URL=/<仓库名>/`）。
 3. 推 `main` 即触发首次发布（工作流 `deploy-pages`）。
 
 之后：**每次 push 到 main 都会重新构建并发布**。
@@ -29,7 +29,7 @@ pnpm run generate          # 产物在 .output/public
 npx serve .output/public   # 本地预览静态产物
 ```
 
-注意本地预览时站点挂在站点根路径，而线上挂在 `/fde-aff-vpsls/` 下——预览时用 `/fde-aff-vpsls/index.html` 之类的路径，或者临时 `NUXT_APP_BASE_URL=/ pnpm run generate` 生成一份根路径版本。
+本地预览与线上结构一致（都挂在根路径），直接访问 `/index.html`、`/deals/index.html` 即可。若要用仓库路径构建一份做对比：`NUXT_APP_BASE_URL=/<仓库名>/ pnpm run generate`。
 
 ## 四、每日数据是怎么更新的
 
