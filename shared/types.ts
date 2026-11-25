@@ -16,7 +16,7 @@ export interface Provider {
   regions: string[]
   /**
    * 每日可用性检测结果：up=官网可达 / down=连续失败 / unknown=尚未检测
-   * 由 server/utils/scheduler.ts 每天写入，也可用 curl -X POST /api/check 触发
+   * 由 scripts/lib/check.ts 每天写入 data/state.json，构建时与种子目录合并
    */
   availability: Availability
   lastCheckedAt: string | null
@@ -79,4 +79,58 @@ export interface ProviderRow extends Provider {
   cheapestPerMonth: number | null
   cheapestPerYear: number | null
   hasAff: boolean
+}
+
+/* ---------- 静态数据文件（data/site/*.json）的结构 ---------- */
+
+/** 首页聚合 */
+export interface HomeResponse {
+  generatedAt: string
+  stats: HomeStats
+  cheapest: Offer[]
+  featured: Offer[]
+  providers: Array<
+    Pick<
+      ProviderRow,
+      | 'slug'
+      | 'name'
+      | 'tagline'
+      | 'availability'
+      | 'offerCount'
+      | 'cheapestPerMonth'
+      | 'cheapestPerYear'
+      | 'hasAff'
+      | 'regions'
+    >
+  >
+  lastRun: CheckRun | null
+  official: { updatedAt: string; slugs: string[]; counts: Record<string, number>; offerCount: number }
+}
+
+/** 套餐全量（筛选器在浏览器里实时筛） */
+export interface OffersResponse {
+  generatedAt: string
+  total: number
+  offers: Offer[]
+}
+
+/** 服务商目录 */
+export interface ProvidersResponse {
+  generatedAt: string
+  providers: ProviderRow[]
+  lastRun: CheckRun | null
+}
+
+/** 汇率 */
+export interface RatesResponse {
+  usdCny: number
+  updatedAt: string
+  source: string
+  fallback: boolean
+}
+
+/** 站点状态（最近一轮检测） */
+export interface StatusResponse {
+  generatedAt: string
+  lastRun: CheckRun | null
 }

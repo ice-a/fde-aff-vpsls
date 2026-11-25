@@ -1,0 +1,103 @@
+{
+  "providerStatus": {
+    "racknerd": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "vultr": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "digitalocean": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "linode": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "hetzner": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "ovhcloud": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "contabo": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "bandwagon": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "vmiss": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "zgovps": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "dogyun": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "justhost": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "colocrossing": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "bytevirt": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "wapac": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "dedione": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    },
+    "cloudserver": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 2
+    },
+    "hosthatch": {
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0
+    }
+  },
+  "lastRun": {
+    "startedAt": "2026-11-25T07:20:00.671Z",
+    "finishedAt": "2026-11-25T07:20:20.270Z",
+    "total": 18,
+    "up": 18,
+    "down": 0,
+    "unknown": 0,
+    "durationMs": 19599
+  }
+}

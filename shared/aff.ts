@@ -8,8 +8,9 @@
  *     - DEFAULT_MODE='GET' + DEFAULT_REF='你的ID' → 裸链拼 ?ref=你的ID
  *     - DEFAULT_MODE='NONE' + DEFAULT_AFF_URL='完整链接' → 整链替换
  *
- * 站内跳转统一走 /go/:slug，服务端在这里查表拼最终 URL。
- * 注意：PROVIDER_AFF 的键必须等于厂商 slug（server/data/providers.ts），否则不命中。
+ * 站内跳转统一走 /go/:slug：构建期为每个厂商生成一张静态跳转页，
+ * 目标 URL 在构建时用 buildAffUrl() 算好写进页面（meta refresh + JS 跳转）。
+ * 注意：PROVIDER_AFF 的键必须等于厂商 slug（shared/data/providers.ts），否则不命中。
  */
 export const AFF_CONFIG = {
   /** 兜底整链（仅 DEFAULT_MODE='NONE' 且非空时生效；空 = 裸链直出） */

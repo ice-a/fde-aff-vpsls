@@ -1,0 +1,316 @@
+{
+  "generatedAt": "2026-11-25T07:20:30.383Z",
+  "providers": [
+    {
+      "slug": "racknerd",
+      "name": "RackNerd",
+      "tagline": "美西低价年付常年有货",
+      "regions": [
+        "US-WEST",
+        "US-EAST"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://racknerd.com",
+      "offerCount": 4,
+      "cheapestPerMonth": 0.92,
+      "cheapestPerYear": 10.98,
+      "hasAff": true
+    },
+    {
+      "slug": "vultr",
+      "name": "Vultr",
+      "tagline": "全球机房按小时计费",
+      "regions": [
+        "US-EAST",
+        "EU",
+        "ASIA"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://www.vultr.com",
+      "offerCount": 4,
+      "cheapestPerMonth": 6,
+      "cheapestPerYear": 72,
+      "hasAff": true
+    },
+    {
+      "slug": "digitalocean",
+      "name": "DigitalOcean",
+      "tagline": "开发者友好带快照",
+      "regions": [
+        "US-EAST",
+        "EU"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://www.digitalocean.com",
+      "offerCount": 3,
+      "cheapestPerMonth": 6,
+      "cheapestPerYear": 72,
+      "hasAff": false
+    },
+    {
+      "slug": "linode",
+      "name": "Linode",
+      "tagline": "Akamai 旗下老牌商家",
+      "regions": [
+        "US-EAST",
+        "EU",
+        "ASIA"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://www.linode.com",
+      "offerCount": 4,
+      "cheapestPerMonth": 5,
+      "cheapestPerYear": 60,
+      "hasAff": false
+    },
+    {
+      "slug": "hetzner",
+      "name": "Hetzner",
+      "tagline": "德国裸价性能猛兽",
+      "regions": [
+        "EU"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://www.hetzner.com",
+      "offerCount": 4,
+      "cheapestPerMonth": 4.52,
+      "cheapestPerYear": 54.24,
+      "hasAff": false
+    },
+    {
+      "slug": "ovhcloud",
+      "name": "OVHcloud",
+      "tagline": "法国大厂防 DDoS 出名",
+      "regions": [
+        "EU",
+        "US-EAST"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://www.ovhcloud.com",
+      "offerCount": 4,
+      "cheapestPerMonth": 4.54,
+      "cheapestPerYear": 54.48,
+      "hasAff": false
+    },
+    {
+      "slug": "contabo",
+      "name": "Contabo",
+      "tagline": "大硬盘便宜的德国商家",
+      "regions": [
+        "EU",
+        "US-EAST",
+        "ASIA"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://contabo.com",
+      "offerCount": 5,
+      "cheapestPerMonth": 5.99,
+      "cheapestPerYear": 71.88,
+      "hasAff": false
+    },
+    {
+      "slug": "bandwagon",
+      "name": "搬瓦工",
+      "tagline": "CN2 GIA 线路标杆",
+      "regions": [
+        "US-WEST",
+        "ASIA"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://bwh81.net",
+      "offerCount": 51,
+      "cheapestPerMonth": 8.33,
+      "cheapestPerYear": 99.99,
+      "hasAff": false
+    },
+    {
+      "slug": "vmiss",
+      "name": "VMISS",
+      "tagline": "亚洲优化线路老商家",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://vmiss.com",
+      "offerCount": 4,
+      "cheapestPerMonth": 1.8,
+      "cheapestPerYear": 21.6,
+      "hasAff": false
+    },
+    {
+      "slug": "zgovps",
+      "name": "ZgoVPS",
+      "tagline": "洛杉矶 CN2 GIA 高配",
+      "regions": [
+        "US-WEST"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://zgovps.com",
+      "offerCount": 3,
+      "cheapestPerMonth": 3.5,
+      "cheapestPerYear": 42,
+      "hasAff": true
+    },
+    {
+      "slug": "dogyun",
+      "name": "Dogyun",
+      "tagline": "港日机房网络稳",
+      "regions": [
+        "ASIA"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://www.dogyun.com",
+      "offerCount": 3,
+      "cheapestPerMonth": 4.83,
+      "cheapestPerYear": 58,
+      "hasAff": false
+    },
+    {
+      "slug": "justhost",
+      "name": "JustHost",
+      "tagline": "俄罗斯多机房白菜价",
+      "regions": [
+        "RU",
+        "EU"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://justhost.ru",
+      "offerCount": 3,
+      "cheapestPerMonth": 1.16,
+      "cheapestPerYear": 13.92,
+      "hasAff": true
+    },
+    {
+      "slug": "colocrossing",
+      "name": "ColoCrossing",
+      "tagline": "美东经济型老牌机房",
+      "regions": [
+        "US-EAST"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://colocrossing.com",
+      "offerCount": 5,
+      "cheapestPerMonth": 20,
+      "cheapestPerYear": 240,
+      "hasAff": true
+    },
+    {
+      "slug": "bytevirt",
+      "name": "Bytevirt",
+      "tagline": "小众精品多地区",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://bytevirt.com",
+      "offerCount": 7,
+      "cheapestPerMonth": 5.5,
+      "cheapestPerYear": 66,
+      "hasAff": false
+    },
+    {
+      "slug": "wapac",
+      "name": "WAP.AC",
+      "tagline": "台湾机房超低年付",
+      "regions": [
+        "ASIA"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://wap.ac",
+      "offerCount": 3,
+      "cheapestPerMonth": 1,
+      "cheapestPerYear": 12,
+      "hasAff": false
+    },
+    {
+      "slug": "dedione",
+      "name": "DediOne",
+      "tagline": "密苏里大容量 NVMe",
+      "regions": [
+        "US-EAST"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://dedione.com",
+      "offerCount": 9,
+      "cheapestPerMonth": 1.08,
+      "cheapestPerYear": 12.99,
+      "hasAff": false
+    },
+    {
+      "slug": "cloudserver",
+      "name": "CloudServer",
+      "tagline": "多机房入门年付",
+      "regions": [
+        "US-WEST"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 2,
+      "url": "https://cloudserver.com",
+      "offerCount": 2,
+      "cheapestPerMonth": 0.83,
+      "cheapestPerYear": 10,
+      "hasAff": false
+    },
+    {
+      "slug": "hosthatch",
+      "name": "HostHatch",
+      "tagline": "欧洲大硬盘便宜货",
+      "regions": [
+        "EU",
+        "US-EAST"
+      ],
+      "availability": "up",
+      "lastCheckedAt": "2026-11-25T07:20:20.269Z",
+      "failStreak": 0,
+      "url": "https://hosthatch.com",
+      "offerCount": 3,
+      "cheapestPerMonth": 0.58,
+      "cheapestPerYear": 7,
+      "hasAff": false
+    }
+  ],
+  "lastRun": {
+    "startedAt": "2026-11-25T07:20:00.671Z",
+    "finishedAt": "2026-11-25T07:20:20.270Z",
+    "total": 18,
+    "up": 18,
+    "down": 0,
+    "unknown": 0,
+    "durationMs": 19599
+  }
+}

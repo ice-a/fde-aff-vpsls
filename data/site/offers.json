@@ -1,0 +1,3086 @@
+{
+  "generatedAt": "2026-11-25T07:20:30.383Z",
+  "total": 121,
+  "offers": [
+    {
+      "id": "of_000",
+      "providerSlug": "racknerd",
+      "title": "KVM · 美西年付入门",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "3TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 10.98,
+      "cycle": "yearly",
+      "perMonth": 0.92,
+      "os": "linux",
+      "tags": [
+        "年付神价"
+      ],
+      "url": "https://racknerd.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 10.98,
+      "hasAff": true
+    },
+    {
+      "id": "of_001",
+      "providerSlug": "racknerd",
+      "title": "KVM · 美西年付进阶",
+      "cpu": 2,
+      "ram": 2.5,
+      "disk": 50,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "5TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 16.98,
+      "cycle": "yearly",
+      "perMonth": 1.42,
+      "os": "linux",
+      "tags": [
+        "年付神价"
+      ],
+      "url": "https://racknerd.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 16.98,
+      "hasAff": true
+    },
+    {
+      "id": "of_002",
+      "providerSlug": "racknerd",
+      "title": "KVM · 美东年付大流量",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "8TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 24.98,
+      "cycle": "yearly",
+      "perMonth": 2.08,
+      "os": "linux",
+      "tags": [
+        "大流量"
+      ],
+      "url": "https://racknerd.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 24.98,
+      "hasAff": true
+    },
+    {
+      "id": "of_003",
+      "providerSlug": "racknerd",
+      "title": "KVM · 月付随时跑路款",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 25,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "3TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 3.49,
+      "cycle": "monthly",
+      "perMonth": 3.49,
+      "os": "linux",
+      "tags": [
+        "月付"
+      ],
+      "url": "https://racknerd.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 41.88,
+      "hasAff": true
+    },
+    {
+      "id": "of_004",
+      "providerSlug": "vultr",
+      "title": "Cloud Compute · 高频",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 25,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 6,
+      "cycle": "monthly",
+      "perMonth": 6,
+      "os": "linux",
+      "tags": [
+        "按小时计费"
+      ],
+      "url": "https://www.vultr.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 72,
+      "hasAff": true
+    },
+    {
+      "id": "of_005",
+      "providerSlug": "vultr",
+      "title": "Cloud Compute · 通用",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "5TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 24,
+      "cycle": "monthly",
+      "perMonth": 24,
+      "os": "linux",
+      "tags": [
+        "按小时计费"
+      ],
+      "url": "https://www.vultr.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 288,
+      "hasAff": true
+    },
+    {
+      "id": "of_006",
+      "providerSlug": "vultr",
+      "title": "Cloud Compute · 高配",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "8TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 48,
+      "cycle": "monthly",
+      "perMonth": 48,
+      "os": "linux",
+      "tags": [
+        "按小时计费"
+      ],
+      "url": "https://www.vultr.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 576,
+      "hasAff": true
+    },
+    {
+      "id": "of_007",
+      "providerSlug": "vultr",
+      "title": "Windows 云服务器",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "3TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 42,
+      "cycle": "monthly",
+      "perMonth": 42,
+      "os": "windows",
+      "tags": [
+        "Windows"
+      ],
+      "url": "https://www.vultr.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 504,
+      "hasAff": true
+    },
+    {
+      "id": "of_008",
+      "providerSlug": "digitalocean",
+      "title": "Droplet · Basic",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 25,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 6,
+      "cycle": "monthly",
+      "perMonth": 6,
+      "os": "linux",
+      "tags": [
+        "开发者首选"
+      ],
+      "url": "https://www.digitalocean.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 72,
+      "hasAff": false
+    },
+    {
+      "id": "of_009",
+      "providerSlug": "digitalocean",
+      "title": "Droplet · Basic+",
+      "cpu": 2,
+      "ram": 2,
+      "disk": 50,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 12,
+      "cycle": "monthly",
+      "perMonth": 12,
+      "os": "linux",
+      "tags": [
+        "开发者首选"
+      ],
+      "url": "https://www.digitalocean.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 144,
+      "hasAff": false
+    },
+    {
+      "id": "of_010",
+      "providerSlug": "digitalocean",
+      "title": "Droplet · 通用型",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "4TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 48,
+      "cycle": "monthly",
+      "perMonth": 48,
+      "os": "linux",
+      "tags": [
+        "开发者首选"
+      ],
+      "url": "https://www.digitalocean.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 576,
+      "hasAff": false
+    },
+    {
+      "id": "of_011",
+      "providerSlug": "linode",
+      "title": "Shared · Nanode",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 25,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 5,
+      "cycle": "monthly",
+      "perMonth": 5,
+      "os": "linux",
+      "tags": [
+        "老牌稳定"
+      ],
+      "url": "https://www.linode.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 60,
+      "hasAff": false
+    },
+    {
+      "id": "of_012",
+      "providerSlug": "linode",
+      "title": "Shared · 2GB",
+      "cpu": 2,
+      "ram": 2,
+      "disk": 50,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 10,
+      "cycle": "monthly",
+      "perMonth": 10,
+      "os": "linux",
+      "tags": [
+        "老牌稳定"
+      ],
+      "url": "https://www.linode.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 120,
+      "hasAff": false
+    },
+    {
+      "id": "of_013",
+      "providerSlug": "linode",
+      "title": "Dedicated · 4核",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "5TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 90,
+      "cycle": "monthly",
+      "perMonth": 90,
+      "os": "linux",
+      "tags": [
+        "独享CPU"
+      ],
+      "url": "https://www.linode.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 1080,
+      "hasAff": false
+    },
+    {
+      "id": "of_014",
+      "providerSlug": "hetzner",
+      "title": "Cloud · CX22",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 40,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "20TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 4.52,
+      "cycle": "monthly",
+      "perMonth": 4.52,
+      "os": "linux",
+      "tags": [
+        "性能猛兽"
+      ],
+      "url": "https://www.hetzner.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 54.24,
+      "hasAff": false
+    },
+    {
+      "id": "of_015",
+      "providerSlug": "hetzner",
+      "title": "Cloud · CX32",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 80,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "20TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 8.38,
+      "cycle": "monthly",
+      "perMonth": 8.38,
+      "os": "linux",
+      "tags": [
+        "性能猛兽"
+      ],
+      "url": "https://www.hetzner.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 100.56,
+      "hasAff": false
+    },
+    {
+      "id": "of_016",
+      "providerSlug": "hetzner",
+      "title": "Cloud · CPX31",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 160,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "20TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 15.19,
+      "cycle": "monthly",
+      "perMonth": 15.19,
+      "os": "linux",
+      "tags": [
+        "性能猛兽",
+        "大流量"
+      ],
+      "url": "https://www.hetzner.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 182.28,
+      "hasAff": false
+    },
+    {
+      "id": "of_017",
+      "providerSlug": "hetzner",
+      "title": "Cloud · 高内存型",
+      "cpu": 8,
+      "ram": 32,
+      "disk": 320,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "20TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 52.9,
+      "cycle": "monthly",
+      "perMonth": 52.9,
+      "os": "linux",
+      "tags": [
+        "大内存"
+      ],
+      "url": "https://www.hetzner.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 634.8,
+      "hasAff": false
+    },
+    {
+      "id": "of_021",
+      "providerSlug": "contabo",
+      "title": "VPS · S",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 50,
+      "diskType": "SSD",
+      "bandwidth": 32,
+      "traffic": "32TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 5.99,
+      "cycle": "monthly",
+      "perMonth": 5.99,
+      "os": "linux",
+      "tags": [
+        "大硬盘"
+      ],
+      "url": "https://contabo.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 71.88,
+      "hasAff": false
+    },
+    {
+      "id": "of_022",
+      "providerSlug": "contabo",
+      "title": "VPS · M",
+      "cpu": 6,
+      "ram": 16,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 32,
+      "traffic": "32TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 10.49,
+      "cycle": "monthly",
+      "perMonth": 10.49,
+      "os": "linux",
+      "tags": [
+        "大硬盘"
+      ],
+      "url": "https://contabo.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 125.88,
+      "hasAff": false
+    },
+    {
+      "id": "of_023",
+      "providerSlug": "contabo",
+      "title": "VPS · L",
+      "cpu": 8,
+      "ram": 32,
+      "disk": 200,
+      "diskType": "SSD",
+      "bandwidth": 32,
+      "traffic": "32TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 16.49,
+      "cycle": "monthly",
+      "perMonth": 16.49,
+      "os": "linux",
+      "tags": [
+        "大硬盘"
+      ],
+      "url": "https://contabo.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 197.88,
+      "hasAff": false
+    },
+    {
+      "id": "of_024",
+      "providerSlug": "contabo",
+      "title": "VPS · XL",
+      "cpu": 10,
+      "ram": 64,
+      "disk": 400,
+      "diskType": "SSD",
+      "bandwidth": 32,
+      "traffic": "32TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 26.49,
+      "cycle": "monthly",
+      "perMonth": 26.49,
+      "os": "linux",
+      "tags": [
+        "大硬盘"
+      ],
+      "url": "https://contabo.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 317.88,
+      "hasAff": false
+    },
+    {
+      "id": "of_029",
+      "providerSlug": "vmiss",
+      "title": "香港 CN2 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 10,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 21.6,
+      "cycle": "yearly",
+      "perMonth": 1.8,
+      "os": "linux",
+      "tags": [
+        "CN2"
+      ],
+      "url": "https://vmiss.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 21.6,
+      "hasAff": false
+    },
+    {
+      "id": "of_030",
+      "providerSlug": "vmiss",
+      "title": "日本 IIJ · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 10,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 24,
+      "cycle": "yearly",
+      "perMonth": 2,
+      "os": "linux",
+      "tags": [
+        "日本优化"
+      ],
+      "url": "https://vmiss.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 24,
+      "hasAff": false
+    },
+    {
+      "id": "of_031",
+      "providerSlug": "vmiss",
+      "title": "洛杉矶 CN2 · 年付",
+      "cpu": 2,
+      "ram": 2,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 28.8,
+      "cycle": "yearly",
+      "perMonth": 2.4,
+      "os": "linux",
+      "tags": [
+        "CN2"
+      ],
+      "url": "https://vmiss.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 28.8,
+      "hasAff": false
+    },
+    {
+      "id": "of_032",
+      "providerSlug": "vmiss",
+      "title": "韩国 BGP · 年付",
+      "cpu": 1,
+      "ram": 2,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 36,
+      "cycle": "yearly",
+      "perMonth": 3,
+      "os": "linux",
+      "tags": [
+        "韩国"
+      ],
+      "url": "https://vmiss.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 36,
+      "hasAff": false
+    },
+    {
+      "id": "of_033",
+      "providerSlug": "zgovps",
+      "title": "洛杉矶 CN2 GIA · 年付",
+      "cpu": 2,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 42,
+      "cycle": "yearly",
+      "perMonth": 3.5,
+      "os": "linux",
+      "tags": [
+        "CN2 GIA"
+      ],
+      "url": "https://zgovps.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 42,
+      "hasAff": true
+    },
+    {
+      "id": "of_034",
+      "providerSlug": "zgovps",
+      "title": "洛杉矶 CN2 GIA · 高配",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 80,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 96,
+      "cycle": "yearly",
+      "perMonth": 8,
+      "os": "linux",
+      "tags": [
+        "CN2 GIA"
+      ],
+      "url": "https://zgovps.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 96,
+      "hasAff": true
+    },
+    {
+      "id": "of_035",
+      "providerSlug": "zgovps",
+      "title": "香港 CN2 · 季付",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 40,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 39,
+      "cycle": "quarterly",
+      "perMonth": 13,
+      "os": "linux",
+      "tags": [
+        "低延迟"
+      ],
+      "url": "https://zgovps.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 156,
+      "hasAff": true
+    },
+    {
+      "id": "of_036",
+      "providerSlug": "dogyun",
+      "title": "香港 BGP · 半年付",
+      "cpu": 2,
+      "ram": 2,
+      "disk": 30,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "1.5TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 29,
+      "cycle": "semiannual",
+      "perMonth": 4.83,
+      "os": "linux",
+      "tags": [
+        "网络稳"
+      ],
+      "url": "https://www.dogyun.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 58,
+      "hasAff": false
+    },
+    {
+      "id": "of_037",
+      "providerSlug": "dogyun",
+      "title": "日本软银 · 半年付",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 40,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 36,
+      "cycle": "semiannual",
+      "perMonth": 6,
+      "os": "linux",
+      "tags": [
+        "软银线"
+      ],
+      "url": "https://www.dogyun.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 72,
+      "hasAff": false
+    },
+    {
+      "id": "of_038",
+      "providerSlug": "dogyun",
+      "title": "香港高防 · 年付",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 60,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "3TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 168,
+      "cycle": "yearly",
+      "perMonth": 14,
+      "os": "linux",
+      "tags": [
+        "高防"
+      ],
+      "url": "https://www.dogyun.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 168,
+      "hasAff": false
+    },
+    {
+      "id": "of_039",
+      "providerSlug": "justhost",
+      "title": "俄区入门 · 年付",
+      "cpu": 1,
+      "ram": 0.5,
+      "disk": 5,
+      "diskType": "HDD",
+      "bandwidth": 1000,
+      "traffic": "不限量",
+      "regions": [
+        "RU"
+      ],
+      "price": 13.92,
+      "cycle": "yearly",
+      "perMonth": 1.16,
+      "os": "linux",
+      "tags": [
+        "白菜价"
+      ],
+      "url": "https://justhost.ru",
+      "featured": false,
+      "source": "seed",
+      "perYear": 13.92,
+      "hasAff": true
+    },
+    {
+      "id": "of_040",
+      "providerSlug": "justhost",
+      "title": "俄区标准 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 15,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "不限量",
+      "regions": [
+        "RU"
+      ],
+      "price": 21.6,
+      "cycle": "yearly",
+      "perMonth": 1.8,
+      "os": "linux",
+      "tags": [
+        "白菜价"
+      ],
+      "url": "https://justhost.ru",
+      "featured": false,
+      "source": "seed",
+      "perYear": 21.6,
+      "hasAff": true
+    },
+    {
+      "id": "of_041",
+      "providerSlug": "justhost",
+      "title": "俄区大内存 · 年付",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 30,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "不限量",
+      "regions": [
+        "EU"
+      ],
+      "price": 39.6,
+      "cycle": "yearly",
+      "perMonth": 3.3,
+      "os": "linux",
+      "tags": [
+        "白菜价"
+      ],
+      "url": "https://justhost.ru",
+      "featured": false,
+      "source": "seed",
+      "perYear": 39.6,
+      "hasAff": true
+    },
+    {
+      "id": "of_048",
+      "providerSlug": "wapac",
+      "title": "台湾入门 · 年付",
+      "cpu": 1,
+      "ram": 0.5,
+      "disk": 5,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "500GB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 12,
+      "cycle": "yearly",
+      "perMonth": 1,
+      "os": "linux",
+      "tags": [
+        "台湾机房"
+      ],
+      "url": "https://wap.ac",
+      "featured": true,
+      "source": "seed",
+      "perYear": 12,
+      "hasAff": false
+    },
+    {
+      "id": "of_049",
+      "providerSlug": "wapac",
+      "title": "台湾标准 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 10,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 24,
+      "cycle": "yearly",
+      "perMonth": 2,
+      "os": "linux",
+      "tags": [
+        "台湾机房"
+      ],
+      "url": "https://wap.ac",
+      "featured": false,
+      "source": "seed",
+      "perYear": 24,
+      "hasAff": false
+    },
+    {
+      "id": "of_050",
+      "providerSlug": "wapac",
+      "title": "台湾高配 · 年付",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "1.5TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 48,
+      "cycle": "yearly",
+      "perMonth": 4,
+      "os": "linux",
+      "tags": [
+        "台湾机房"
+      ],
+      "url": "https://wap.ac",
+      "featured": false,
+      "source": "seed",
+      "perYear": 48,
+      "hasAff": false
+    },
+    {
+      "id": "of_054",
+      "providerSlug": "cloudserver",
+      "title": "多机房入门 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 10,
+      "cycle": "yearly",
+      "perMonth": 0.83,
+      "os": "linux",
+      "tags": [
+        "超低价"
+      ],
+      "url": "https://cloudserver.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 10,
+      "hasAff": false
+    },
+    {
+      "id": "of_055",
+      "providerSlug": "cloudserver",
+      "title": "多机房标准 · 年付",
+      "cpu": 2,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "3TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 18,
+      "cycle": "yearly",
+      "perMonth": 1.5,
+      "os": "linux",
+      "tags": [
+        "超低价"
+      ],
+      "url": "https://cloudserver.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 18,
+      "hasAff": false
+    },
+    {
+      "id": "of_056",
+      "providerSlug": "hosthatch",
+      "title": "欧洲 HV1 · 半年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 25,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 3.5,
+      "cycle": "semiannual",
+      "perMonth": 0.58,
+      "os": "linux",
+      "tags": [
+        "欧洲便宜"
+      ],
+      "url": "https://hosthatch.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 7,
+      "hasAff": false
+    },
+    {
+      "id": "of_057",
+      "providerSlug": "hosthatch",
+      "title": "欧洲 HV2 · 半年付",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 50,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "4TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 6,
+      "cycle": "semiannual",
+      "perMonth": 1,
+      "os": "linux",
+      "tags": [
+        "欧洲便宜"
+      ],
+      "url": "https://hosthatch.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 12,
+      "hasAff": false
+    },
+    {
+      "id": "of_058",
+      "providerSlug": "hosthatch",
+      "title": "美东大硬盘 · 年付",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "5TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 28,
+      "cycle": "yearly",
+      "perMonth": 2.33,
+      "os": "linux",
+      "tags": [
+        "大硬盘"
+      ],
+      "url": "https://hosthatch.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 28,
+      "hasAff": false
+    },
+    {
+      "id": "of_059",
+      "providerSlug": "contabo",
+      "title": "Windows VPS · M",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 120,
+      "diskType": "SSD",
+      "bandwidth": 32,
+      "traffic": "32TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 18.49,
+      "cycle": "monthly",
+      "perMonth": 18.49,
+      "os": "windows",
+      "tags": [
+        "Windows"
+      ],
+      "url": "https://contabo.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 221.88,
+      "hasAff": false
+    },
+    {
+      "id": "of_060",
+      "providerSlug": "linode",
+      "title": "Windows · 2GB",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 60,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 70,
+      "cycle": "monthly",
+      "perMonth": 70,
+      "os": "windows",
+      "tags": [
+        "Windows"
+      ],
+      "url": "https://www.linode.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 840,
+      "hasAff": false
+    },
+    {
+      "id": "of_bandwagon_000",
+      "providerSlug": "bandwagon",
+      "title": "40G KVM - PROMO VPS",
+      "cpu": 3,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TBTB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 99.99,
+      "cycle": "yearly",
+      "perMonth": 8.33,
+      "perYear": 99.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=45",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_001",
+      "providerSlug": "bandwagon",
+      "title": "80G KVM - PROMO VPS",
+      "cpu": 4,
+      "ram": 4,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "3TBTB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 199.99,
+      "cycle": "yearly",
+      "perMonth": 16.67,
+      "perYear": 199.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=46",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_002",
+      "providerSlug": "bandwagon",
+      "title": "160G KVM - PROMO VPS",
+      "cpu": 5,
+      "ram": 8,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "4TBTB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 399.99,
+      "cycle": "yearly",
+      "perMonth": 33.33,
+      "perYear": 399.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=47",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_003",
+      "providerSlug": "bandwagon",
+      "title": "320G KVM - PROMO VPS",
+      "cpu": 6,
+      "ram": 16,
+      "disk": 320,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "5TBTB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 799.99,
+      "cycle": "yearly",
+      "perMonth": 66.67,
+      "perYear": 799.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=48",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_004",
+      "providerSlug": "bandwagon",
+      "title": "480G KVM - PROMO VPS",
+      "cpu": 7,
+      "ram": 24,
+      "disk": 480,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "6TBTB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 1199.99,
+      "cycle": "yearly",
+      "perMonth": 100,
+      "perYear": 1199.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=49",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_005",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 40G KVM PROMO V5 - SINGAPORE CN2 GIA VPS",
+      "cpu": 2,
+      "ram": 1,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1500,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 499.99,
+      "cycle": "yearly",
+      "perMonth": 41.67,
+      "perYear": 499.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=173",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_006",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 80G KVM PROMO V5 - SINGAPORE CN2 GIA VPS",
+      "cpu": 4,
+      "ram": 1,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 1500,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 869.99,
+      "cycle": "yearly",
+      "perMonth": 72.5,
+      "perYear": 869.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=174",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_007",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 160G KVM PROMO V5 - SINGAPORE CN2 GIA VPS",
+      "cpu": 6,
+      "ram": 1,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 2500,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 1665.99,
+      "cycle": "yearly",
+      "perMonth": 138.83,
+      "perYear": 1665.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=175",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_008",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 320G KVM PROMO V5 - SINGAPORE CN2 GIA VPS",
+      "cpu": 8,
+      "ram": 1,
+      "disk": 320,
+      "diskType": "SSD",
+      "bandwidth": 2500,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 3199,
+      "cycle": "yearly",
+      "perMonth": 266.58,
+      "perYear": 3199,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=176",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_009",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 640G KVM PROMO V5 - SINGAPORE CN2 GIA VPS",
+      "cpu": 10,
+      "ram": 1,
+      "disk": 640,
+      "diskType": "SSD",
+      "bandwidth": 5000,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 5549.99,
+      "cycle": "yearly",
+      "perMonth": 462.5,
+      "perYear": 5549.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=177",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_010",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 1280G KVM PROMO V5 - SINGAPORE CN2 GIA VPS",
+      "cpu": 12,
+      "ram": 1,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 5000,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 10559.99,
+      "cycle": "yearly",
+      "perMonth": 880,
+      "perYear": 10559.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=178",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_011",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 40G KVM PROMO V5 - OSAKA CN2 GIA VPS",
+      "cpu": 2,
+      "ram": 1,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1500,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 499.99,
+      "cycle": "yearly",
+      "perMonth": 41.67,
+      "perYear": 499.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=134",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_012",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 80G KVM PROMO V5 - OSAKA CN2 GIA VPS",
+      "cpu": 4,
+      "ram": 1,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 1500,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 869.99,
+      "cycle": "yearly",
+      "perMonth": 72.5,
+      "perYear": 869.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=135",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_013",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 160G KVM PROMO V5 - OSAKA CN2 GIA VPS",
+      "cpu": 6,
+      "ram": 1,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 1500,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 1665.99,
+      "cycle": "yearly",
+      "perMonth": 138.83,
+      "perYear": 1665.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=136",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_014",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 320G KVM PROMO V5 - OSAKA CN2 GIA VPS",
+      "cpu": 8,
+      "ram": 1,
+      "disk": 320,
+      "diskType": "SSD",
+      "bandwidth": 1500,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 3199,
+      "cycle": "yearly",
+      "perMonth": 266.58,
+      "perYear": 3199,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=137",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_015",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 640G KVM PROMO V5 - OSAKA CN2 GIA VPS",
+      "cpu": 10,
+      "ram": 1,
+      "disk": 640,
+      "diskType": "SSD",
+      "bandwidth": 1500,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 5549.99,
+      "cycle": "yearly",
+      "perMonth": 462.5,
+      "perYear": 5549.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=138",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_016",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 1280G KVM PROMO V5 - OSAKA CN2 GIA VPS",
+      "cpu": 12,
+      "ram": 1,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 1500,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 10559.99,
+      "cycle": "yearly",
+      "perMonth": 880,
+      "perYear": 10559.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=139",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_017",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 40G KVM PROMO V5 - HONG KONG CN2 GIA VPS",
+      "cpu": 2,
+      "ram": 1,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 899.99,
+      "cycle": "yearly",
+      "perMonth": 75,
+      "perYear": 899.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=95",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_018",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 80G KVM PROMO V5 - HONG KONG CN2 GIA VPS",
+      "cpu": 4,
+      "ram": 1,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 1559.99,
+      "cycle": "yearly",
+      "perMonth": 130,
+      "perYear": 1559.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=96",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_019",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 160G KVM PROMO V5 - HONG KONG CN2 GIA VPS",
+      "cpu": 6,
+      "ram": 1,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 2999.99,
+      "cycle": "yearly",
+      "perMonth": 250,
+      "perYear": 2999.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=97",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_020",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 320G KVM PROMO V5 - HONG KONG CN2 GIA VPS",
+      "cpu": 8,
+      "ram": 1,
+      "disk": 320,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 5899.99,
+      "cycle": "yearly",
+      "perMonth": 491.67,
+      "perYear": 5899.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=98",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_021",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 640G KVM PROMO V5 - HONG KONG CN2 GIA VPS",
+      "cpu": 10,
+      "ram": 1,
+      "disk": 640,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 9989.99,
+      "cycle": "yearly",
+      "perMonth": 832.5,
+      "perYear": 9989.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=122",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_022",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 1280G KVM PROMO V5 - HONG KONG CN2 GIA VPS",
+      "cpu": 12,
+      "ram": 1,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 18989.99,
+      "cycle": "yearly",
+      "perMonth": 1582.5,
+      "perYear": 18989.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=124",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_023",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 40G KVM PROMO V5 - TOKYO CN2 GIA VPS",
+      "cpu": 2,
+      "ram": 1,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1200,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 899.99,
+      "cycle": "yearly",
+      "perMonth": 75,
+      "perYear": 899.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=108",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_024",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 80G KVM PROMO V5 - TOKYO CN2 GIA VPS",
+      "cpu": 4,
+      "ram": 1,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 1200,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 1559.99,
+      "cycle": "yearly",
+      "perMonth": 130,
+      "perYear": 1559.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=109",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_025",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 160G KVM PROMO V5 - TOKYO CN2 GIA VPS",
+      "cpu": 6,
+      "ram": 1,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 1200,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 2999.99,
+      "cycle": "yearly",
+      "perMonth": 250,
+      "perYear": 2999.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=110",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_026",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 320G KVM PROMO V5 - TOKYO CN2 GIA VPS",
+      "cpu": 8,
+      "ram": 1,
+      "disk": 320,
+      "diskType": "SSD",
+      "bandwidth": 1200,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 5899.99,
+      "cycle": "yearly",
+      "perMonth": 491.67,
+      "perYear": 5899.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=111",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_027",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 640G KVM PROMO V5 - TOKYO CN2 GIA VPS",
+      "cpu": 10,
+      "ram": 1,
+      "disk": 640,
+      "diskType": "SSD",
+      "bandwidth": 1200,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 9989.99,
+      "cycle": "yearly",
+      "perMonth": 832.5,
+      "perYear": 9989.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=123",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_028",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 1280G KVM PROMO V5 - TOKYO CN2 GIA VPS",
+      "cpu": 12,
+      "ram": 1,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 1200,
+      "traffic": "—",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 18989.99,
+      "cycle": "yearly",
+      "perMonth": 1582.5,
+      "perYear": 18989.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=125",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_029",
+      "providerSlug": "bandwagon",
+      "title": "40G KVM - ECOMMERCE SLA LOS ANGELES VPS",
+      "cpu": 3,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 2500,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 399.99,
+      "cycle": "yearly",
+      "perMonth": 33.33,
+      "perYear": 399.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=165",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_030",
+      "providerSlug": "bandwagon",
+      "title": "80G KVM - ECOMMERCE SLA LOS ANGELES VPS",
+      "cpu": 4,
+      "ram": 4,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 2500,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 699.99,
+      "cycle": "yearly",
+      "perMonth": 58.33,
+      "perYear": 699.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=166",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_031",
+      "providerSlug": "bandwagon",
+      "title": "160G KVM - ECOMMERCE SLA LOS ANGELES VPS",
+      "cpu": 6,
+      "ram": 8,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 5000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 1099.99,
+      "cycle": "yearly",
+      "perMonth": 91.67,
+      "perYear": 1099.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=167",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_032",
+      "providerSlug": "bandwagon",
+      "title": "320G KVM - ECOMMERCE SLA LOS ANGELES VPS",
+      "cpu": 8,
+      "ram": 16,
+      "disk": 320,
+      "diskType": "SSD",
+      "bandwidth": 5000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 1999.99,
+      "cycle": "yearly",
+      "perMonth": 166.67,
+      "perYear": 1999.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=168",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_033",
+      "providerSlug": "bandwagon",
+      "title": "640G KVM - ECOMMERCE SLA LOS ANGELES VPS",
+      "cpu": 10,
+      "ram": 32,
+      "disk": 640,
+      "diskType": "SSD",
+      "bandwidth": 10000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 3699.99,
+      "cycle": "yearly",
+      "perMonth": 308.33,
+      "perYear": 3699.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=169",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_034",
+      "providerSlug": "bandwagon",
+      "title": "1280G KVM - ECOMMERCE SLA LOS ANGELES VPS",
+      "cpu": 12,
+      "ram": 64,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 10000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 6999.99,
+      "cycle": "yearly",
+      "perMonth": 583.33,
+      "perYear": 6999.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=170",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_035",
+      "providerSlug": "bandwagon",
+      "title": "1280G KVM - ECOMMERCE SLA LOS ANGELES HIBW 15T VPS",
+      "cpu": 12,
+      "ram": 64,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 10000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 8799.99,
+      "cycle": "yearly",
+      "perMonth": 733.33,
+      "perYear": 8799.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=171",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_036",
+      "providerSlug": "bandwagon",
+      "title": "1280G KVM - ECOMMERCE SLA LOS ANGELES HIBW 20T VPS",
+      "cpu": 12,
+      "ram": 64,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 10000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 11598.99,
+      "cycle": "yearly",
+      "perMonth": 966.58,
+      "perYear": 11598.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=172",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_037",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 40G KVM PROMO V5 - CN2 GIA ECOMMERCE VPS",
+      "cpu": 3,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 2500,
+      "traffic": "—",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "price": 299.99,
+      "cycle": "yearly",
+      "perMonth": 25,
+      "perYear": 299.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=88",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_038",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 80G KVM PROMO V5 - CN2 GIA ECOMMERCE VPS",
+      "cpu": 4,
+      "ram": 4,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 2500,
+      "traffic": "—",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "price": 549.99,
+      "cycle": "yearly",
+      "perMonth": 45.83,
+      "perYear": 549.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=89",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_039",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 160G KVM PROMO V5 - CN2 GIA ECOMMERCE VPS",
+      "cpu": 6,
+      "ram": 8,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 5000,
+      "traffic": "—",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "price": 879.99,
+      "cycle": "yearly",
+      "perMonth": 73.33,
+      "perYear": 879.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=90",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_040",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 320G KVM PROMO V5 - CN2 GIA ECOMMERCE VPS",
+      "cpu": 8,
+      "ram": 16,
+      "disk": 320,
+      "diskType": "SSD",
+      "bandwidth": 5000,
+      "traffic": "—",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "price": 1599.99,
+      "cycle": "yearly",
+      "perMonth": 133.33,
+      "perYear": 1599.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=91",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_041",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 640G KVM PROMO V5 - CN2 GIA ECOMMERCE VPS",
+      "cpu": 10,
+      "ram": 32,
+      "disk": 640,
+      "diskType": "SSD",
+      "bandwidth": 10000,
+      "traffic": "—",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "price": 2759.99,
+      "cycle": "yearly",
+      "perMonth": 230,
+      "perYear": 2759.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=92",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_042",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 1280G KVM PROMO V5 - CN2 GIA ECOMMERCE VPS",
+      "cpu": 12,
+      "ram": 64,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 10000,
+      "traffic": "—",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "price": 5499.99,
+      "cycle": "yearly",
+      "perMonth": 458.33,
+      "perYear": 5499.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=93",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_043",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 1280G KVM PROMO V5 - CN2 GIA ECOMMERCE HIBW 15T VPS",
+      "cpu": 12,
+      "ram": 64,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 10000,
+      "traffic": "—",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "price": 6790,
+      "cycle": "yearly",
+      "perMonth": 565.83,
+      "perYear": 6790,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=160",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_044",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 1280G KVM PROMO V5 - CN2 GIA ECOMMERCE HIBW 20T VPS",
+      "cpu": 12,
+      "ram": 64,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 10000,
+      "traffic": "—",
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ],
+      "price": 8999,
+      "cycle": "yearly",
+      "perMonth": 749.92,
+      "perYear": 8999,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=161",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_045",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 40G KVM PROMO V5 - DUBAI - ECOMMERCE VPS",
+      "cpu": 3,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 299.99,
+      "cycle": "yearly",
+      "perMonth": 25,
+      "perYear": 299.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=115",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_046",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 80G KVM PROMO V5 - DUBAI - ECOMMERCE VPS",
+      "cpu": 4,
+      "ram": 4,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 549.99,
+      "cycle": "yearly",
+      "perMonth": 45.83,
+      "perYear": 549.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=116",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_047",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 160G KVM PROMO V5 - DUBAI - ECOMMERCE VPS",
+      "cpu": 6,
+      "ram": 8,
+      "disk": 160,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 879.99,
+      "cycle": "yearly",
+      "perMonth": 73.33,
+      "perYear": 879.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=117",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_048",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 320G KVM PROMO V5 - DUBAI - ECOMMERCE VPS",
+      "cpu": 8,
+      "ram": 16,
+      "disk": 320,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 1599.99,
+      "cycle": "yearly",
+      "perMonth": 133.33,
+      "perYear": 1599.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=118",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_049",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 640G KVM PROMO V5 - DUBAI - ECOMMERCE VPS",
+      "cpu": 10,
+      "ram": 32,
+      "disk": 640,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 2759.99,
+      "cycle": "yearly",
+      "perMonth": 230,
+      "perYear": 2759.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=119",
+      "source": "official"
+    },
+    {
+      "id": "of_bandwagon_050",
+      "providerSlug": "bandwagon",
+      "title": "SPECIAL 1280G KVM PROMO V5 - DUBAI - ECOMMERCE VPS",
+      "cpu": 12,
+      "ram": 64,
+      "disk": 1280,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 5399.99,
+      "cycle": "yearly",
+      "perMonth": 450,
+      "perYear": 5399.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bwh81.net/cart.php?a=add&pid=120",
+      "source": "official"
+    },
+    {
+      "id": "of_dedione_000",
+      "providerSlug": "dedione",
+      "title": "20260520-LAX.VPS.INTL.1C1G20G-Special-12.99",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 12.99,
+      "cycle": "yearly",
+      "perMonth": 1.08,
+      "perYear": 12.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://dedione.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_dedione_001",
+      "providerSlug": "dedione",
+      "title": "20260520-LAX.VPS.CN.1C1G20G-Special-12.99",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 12.99,
+      "cycle": "yearly",
+      "perMonth": 1.08,
+      "perYear": 12.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://dedione.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_dedione_002",
+      "providerSlug": "dedione",
+      "title": "20260520-LAX.VPS.CN.2C2G40G-Special-25.99",
+      "cpu": 1,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 25.99,
+      "cycle": "yearly",
+      "perMonth": 2.17,
+      "perYear": 25.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://dedione.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_dedione_003",
+      "providerSlug": "dedione",
+      "title": "20260606-LAX.VPS.CMIN2.1C1G10G-Special-19.99",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 10,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 19.99,
+      "cycle": "yearly",
+      "perMonth": 1.67,
+      "perYear": 19.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://dedione.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_dedione_004",
+      "providerSlug": "dedione",
+      "title": "20260616-KC.VPS.CN.1C1G30G-Special-12.99",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 30,
+      "diskType": "NVME",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 12.99,
+      "cycle": "yearly",
+      "perMonth": 1.08,
+      "perYear": 12.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://dedione.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_dedione_005",
+      "providerSlug": "dedione",
+      "title": "20260616-KC.VPS.CN.2C2G50G-Special-25.99",
+      "cpu": 1,
+      "ram": 2,
+      "disk": 50,
+      "diskType": "NVME",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 25.99,
+      "cycle": "yearly",
+      "perMonth": 2.17,
+      "perYear": 25.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://dedione.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_dedione_006",
+      "providerSlug": "dedione",
+      "title": "20250927-KC-Special-12.99",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "NVME",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 12.99,
+      "cycle": "yearly",
+      "perMonth": 1.08,
+      "perYear": 12.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://dedione.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_dedione_007",
+      "providerSlug": "dedione",
+      "title": "20250927-KC-Special-20.99",
+      "cpu": 1,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "NVME",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 20.99,
+      "cycle": "yearly",
+      "perMonth": 1.75,
+      "perYear": 20.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://dedione.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_dedione_008",
+      "providerSlug": "dedione",
+      "title": "20250927-KC-Special-40.99",
+      "cpu": 1,
+      "ram": 4,
+      "disk": 80,
+      "diskType": "NVME",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 40.99,
+      "cycle": "yearly",
+      "perMonth": 3.42,
+      "perYear": 40.99,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://dedione.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_000",
+      "providerSlug": "colocrossing",
+      "title": "Starter",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 50,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "4TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 20,
+      "cycle": "monthly",
+      "perMonth": 20,
+      "perYear": 240,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_001",
+      "providerSlug": "colocrossing",
+      "title": "Standard",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "8TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 40,
+      "cycle": "monthly",
+      "perMonth": 40,
+      "perYear": 480,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_002",
+      "providerSlug": "colocrossing",
+      "title": "Standard+",
+      "cpu": 8,
+      "ram": 16,
+      "disk": 200,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "12TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 80,
+      "cycle": "monthly",
+      "perMonth": 80,
+      "perYear": 960,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_003",
+      "providerSlug": "colocrossing",
+      "title": "Professional",
+      "cpu": 16,
+      "ram": 32,
+      "disk": 400,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "20TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 160,
+      "cycle": "monthly",
+      "perMonth": 160,
+      "perYear": 1920,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_004",
+      "providerSlug": "colocrossing",
+      "title": "Enterprise",
+      "cpu": 24,
+      "ram": 64,
+      "disk": 800,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "30TB/月",
+      "regions": [
+        "RU"
+      ],
+      "price": 320,
+      "cycle": "monthly",
+      "perMonth": 320,
+      "perYear": 3840,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_000",
+      "providerSlug": "bytevirt",
+      "title": "VPS-512-KVM-CN2 GIA LA",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 15,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 66,
+      "cycle": "yearly",
+      "perMonth": 5.5,
+      "perYear": 66,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_001",
+      "providerSlug": "bytevirt",
+      "title": "VPS-1024-KVM-CN2 GIA LA",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 12,
+      "cycle": "monthly",
+      "perMonth": 12,
+      "perYear": 144,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_002",
+      "providerSlug": "bytevirt",
+      "title": "VPS-2048-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 24,
+      "cycle": "monthly",
+      "perMonth": 24,
+      "perYear": 288,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_003",
+      "providerSlug": "bytevirt",
+      "title": "VPS-3072-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 3,
+      "disk": 60,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 36.3,
+      "cycle": "monthly",
+      "perMonth": 36.3,
+      "perYear": 435.6,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_004",
+      "providerSlug": "bytevirt",
+      "title": "VPS-4096-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 4,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 48.4,
+      "cycle": "monthly",
+      "perMonth": 48.4,
+      "perYear": 580.8,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_005",
+      "providerSlug": "bytevirt",
+      "title": "VPS-4C8G100G1T-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 8,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 27.5,
+      "cycle": "monthly",
+      "perMonth": 27.5,
+      "perYear": 330,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_006",
+      "providerSlug": "bytevirt",
+      "title": "VPS-8C16G100G10T-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 16,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST",
+        "RU"
+      ],
+      "price": 242,
+      "cycle": "monthly",
+      "perMonth": 242,
+      "perYear": 2904,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_ovhcloud_000",
+      "providerSlug": "ovhcloud",
+      "title": "VPS-1",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "EU"
+      ],
+      "price": 4.54,
+      "cycle": "monthly",
+      "perMonth": 4.54,
+      "perYear": 54.48,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://www.ovhcloud.com/en/vps/",
+      "source": "official"
+    },
+    {
+      "id": "of_ovhcloud_001",
+      "providerSlug": "ovhcloud",
+      "title": "VPS-2",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "EU"
+      ],
+      "price": 8.5,
+      "cycle": "monthly",
+      "perMonth": 8.5,
+      "perYear": 102,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://www.ovhcloud.com/en/vps/",
+      "source": "official"
+    },
+    {
+      "id": "of_ovhcloud_002",
+      "providerSlug": "ovhcloud",
+      "title": "VPS-3",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "EU"
+      ],
+      "price": 12.32,
+      "cycle": "monthly",
+      "perMonth": 12.32,
+      "perYear": 147.84,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://www.ovhcloud.com/en/vps/",
+      "source": "official"
+    },
+    {
+      "id": "of_ovhcloud_003",
+      "providerSlug": "ovhcloud",
+      "title": "VPS-4",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "EU"
+      ],
+      "price": 23.37,
+      "cycle": "monthly",
+      "perMonth": 23.37,
+      "perYear": 280.44,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://www.ovhcloud.com/en/vps/",
+      "source": "official"
+    }
+  ]
+}

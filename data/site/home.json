@@ -1,0 +1,682 @@
+{
+  "generatedAt": "2026-11-25T07:20:30.383Z",
+  "stats": {
+    "offerCount": 121,
+    "providerCount": 18,
+    "regionCount": 5,
+    "updatedAt": "2026-11-25T07:20:20.270Z",
+    "upCount": 18,
+    "downCount": 0
+  },
+  "cheapest": [
+    {
+      "id": "of_000",
+      "providerSlug": "racknerd",
+      "title": "KVM · 美西年付入门",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "3TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 10.98,
+      "cycle": "yearly",
+      "perMonth": 0.92,
+      "os": "linux",
+      "tags": [
+        "年付神价"
+      ],
+      "url": "https://racknerd.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 10.98,
+      "hasAff": true
+    },
+    {
+      "id": "of_039",
+      "providerSlug": "justhost",
+      "title": "俄区入门 · 年付",
+      "cpu": 1,
+      "ram": 0.5,
+      "disk": 5,
+      "diskType": "HDD",
+      "bandwidth": 1000,
+      "traffic": "不限量",
+      "regions": [
+        "RU"
+      ],
+      "price": 13.92,
+      "cycle": "yearly",
+      "perMonth": 1.16,
+      "os": "linux",
+      "tags": [
+        "白菜价"
+      ],
+      "url": "https://justhost.ru",
+      "featured": false,
+      "source": "seed",
+      "perYear": 13.92,
+      "hasAff": true
+    },
+    {
+      "id": "of_001",
+      "providerSlug": "racknerd",
+      "title": "KVM · 美西年付进阶",
+      "cpu": 2,
+      "ram": 2.5,
+      "disk": 50,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "5TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 16.98,
+      "cycle": "yearly",
+      "perMonth": 1.42,
+      "os": "linux",
+      "tags": [
+        "年付神价"
+      ],
+      "url": "https://racknerd.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 16.98,
+      "hasAff": true
+    },
+    {
+      "id": "of_040",
+      "providerSlug": "justhost",
+      "title": "俄区标准 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 15,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "不限量",
+      "regions": [
+        "RU"
+      ],
+      "price": 21.6,
+      "cycle": "yearly",
+      "perMonth": 1.8,
+      "os": "linux",
+      "tags": [
+        "白菜价"
+      ],
+      "url": "https://justhost.ru",
+      "featured": false,
+      "source": "seed",
+      "perYear": 21.6,
+      "hasAff": true
+    },
+    {
+      "id": "of_002",
+      "providerSlug": "racknerd",
+      "title": "KVM · 美东年付大流量",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 80,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "8TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 24.98,
+      "cycle": "yearly",
+      "perMonth": 2.08,
+      "os": "linux",
+      "tags": [
+        "大流量"
+      ],
+      "url": "https://racknerd.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 24.98,
+      "hasAff": true
+    },
+    {
+      "id": "of_041",
+      "providerSlug": "justhost",
+      "title": "俄区大内存 · 年付",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 30,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "不限量",
+      "regions": [
+        "EU"
+      ],
+      "price": 39.6,
+      "cycle": "yearly",
+      "perMonth": 3.3,
+      "os": "linux",
+      "tags": [
+        "白菜价"
+      ],
+      "url": "https://justhost.ru",
+      "featured": false,
+      "source": "seed",
+      "perYear": 39.6,
+      "hasAff": true
+    },
+    {
+      "id": "of_033",
+      "providerSlug": "zgovps",
+      "title": "洛杉矶 CN2 GIA · 年付",
+      "cpu": 2,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 42,
+      "cycle": "yearly",
+      "perMonth": 3.5,
+      "os": "linux",
+      "tags": [
+        "CN2 GIA"
+      ],
+      "url": "https://zgovps.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 42,
+      "hasAff": true
+    },
+    {
+      "id": "of_034",
+      "providerSlug": "zgovps",
+      "title": "洛杉矶 CN2 GIA · 高配",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 80,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 96,
+      "cycle": "yearly",
+      "perMonth": 8,
+      "os": "linux",
+      "tags": [
+        "CN2 GIA"
+      ],
+      "url": "https://zgovps.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 96,
+      "hasAff": true
+    }
+  ],
+  "featured": [
+    {
+      "id": "of_000",
+      "providerSlug": "racknerd",
+      "title": "KVM · 美西年付入门",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "3TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 10.98,
+      "cycle": "yearly",
+      "perMonth": 0.92,
+      "os": "linux",
+      "tags": [
+        "年付神价"
+      ],
+      "url": "https://racknerd.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 10.98,
+      "hasAff": true
+    },
+    {
+      "id": "of_033",
+      "providerSlug": "zgovps",
+      "title": "洛杉矶 CN2 GIA · 年付",
+      "cpu": 2,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 42,
+      "cycle": "yearly",
+      "perMonth": 3.5,
+      "os": "linux",
+      "tags": [
+        "CN2 GIA"
+      ],
+      "url": "https://zgovps.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 42,
+      "hasAff": true
+    },
+    {
+      "id": "of_007",
+      "providerSlug": "vultr",
+      "title": "Windows 云服务器",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "3TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 42,
+      "cycle": "monthly",
+      "perMonth": 42,
+      "os": "windows",
+      "tags": [
+        "Windows"
+      ],
+      "url": "https://www.vultr.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 504,
+      "hasAff": true
+    },
+    {
+      "id": "of_054",
+      "providerSlug": "cloudserver",
+      "title": "多机房入门 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "2TB/月",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 10,
+      "cycle": "yearly",
+      "perMonth": 0.83,
+      "os": "linux",
+      "tags": [
+        "超低价"
+      ],
+      "url": "https://cloudserver.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 10,
+      "hasAff": false
+    },
+    {
+      "id": "of_048",
+      "providerSlug": "wapac",
+      "title": "台湾入门 · 年付",
+      "cpu": 1,
+      "ram": 0.5,
+      "disk": 5,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "500GB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 12,
+      "cycle": "yearly",
+      "perMonth": 1,
+      "os": "linux",
+      "tags": [
+        "台湾机房"
+      ],
+      "url": "https://wap.ac",
+      "featured": true,
+      "source": "seed",
+      "perYear": 12,
+      "hasAff": false
+    },
+    {
+      "id": "of_029",
+      "providerSlug": "vmiss",
+      "title": "香港 CN2 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 10,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "1TB/月",
+      "regions": [
+        "ASIA"
+      ],
+      "price": 21.6,
+      "cycle": "yearly",
+      "perMonth": 1.8,
+      "os": "linux",
+      "tags": [
+        "CN2"
+      ],
+      "url": "https://vmiss.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 21.6,
+      "hasAff": false
+    },
+    {
+      "id": "of_014",
+      "providerSlug": "hetzner",
+      "title": "Cloud · CX22",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 40,
+      "diskType": "NVMe",
+      "bandwidth": 1000,
+      "traffic": "20TB/月",
+      "regions": [
+        "EU"
+      ],
+      "price": 4.52,
+      "cycle": "monthly",
+      "perMonth": 4.52,
+      "os": "linux",
+      "tags": [
+        "性能猛兽"
+      ],
+      "url": "https://www.hetzner.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 54.24,
+      "hasAff": false
+    }
+  ],
+  "providers": [
+    {
+      "slug": "colocrossing",
+      "name": "ColoCrossing",
+      "tagline": "美东经济型老牌机房",
+      "availability": "up",
+      "offerCount": 5,
+      "cheapestPerMonth": 20,
+      "cheapestPerYear": 240,
+      "hasAff": true,
+      "regions": [
+        "US-EAST"
+      ]
+    },
+    {
+      "slug": "racknerd",
+      "name": "RackNerd",
+      "tagline": "美西低价年付常年有货",
+      "availability": "up",
+      "offerCount": 4,
+      "cheapestPerMonth": 0.92,
+      "cheapestPerYear": 10.98,
+      "hasAff": true,
+      "regions": [
+        "US-WEST",
+        "US-EAST"
+      ]
+    },
+    {
+      "slug": "vultr",
+      "name": "Vultr",
+      "tagline": "全球机房按小时计费",
+      "availability": "up",
+      "offerCount": 4,
+      "cheapestPerMonth": 6,
+      "cheapestPerYear": 72,
+      "hasAff": true,
+      "regions": [
+        "US-EAST",
+        "EU",
+        "ASIA"
+      ]
+    },
+    {
+      "slug": "zgovps",
+      "name": "ZgoVPS",
+      "tagline": "洛杉矶 CN2 GIA 高配",
+      "availability": "up",
+      "offerCount": 3,
+      "cheapestPerMonth": 3.5,
+      "cheapestPerYear": 42,
+      "hasAff": true,
+      "regions": [
+        "US-WEST"
+      ]
+    },
+    {
+      "slug": "justhost",
+      "name": "JustHost",
+      "tagline": "俄罗斯多机房白菜价",
+      "availability": "up",
+      "offerCount": 3,
+      "cheapestPerMonth": 1.16,
+      "cheapestPerYear": 13.92,
+      "hasAff": true,
+      "regions": [
+        "RU",
+        "EU"
+      ]
+    },
+    {
+      "slug": "bandwagon",
+      "name": "搬瓦工",
+      "tagline": "CN2 GIA 线路标杆",
+      "availability": "up",
+      "offerCount": 51,
+      "cheapestPerMonth": 8.33,
+      "cheapestPerYear": 99.99,
+      "hasAff": false,
+      "regions": [
+        "US-WEST",
+        "ASIA"
+      ]
+    },
+    {
+      "slug": "dedione",
+      "name": "DediOne",
+      "tagline": "密苏里大容量 NVMe",
+      "availability": "up",
+      "offerCount": 9,
+      "cheapestPerMonth": 1.08,
+      "cheapestPerYear": 12.99,
+      "hasAff": false,
+      "regions": [
+        "US-EAST"
+      ]
+    },
+    {
+      "slug": "bytevirt",
+      "name": "Bytevirt",
+      "tagline": "小众精品多地区",
+      "availability": "up",
+      "offerCount": 7,
+      "cheapestPerMonth": 5.5,
+      "cheapestPerYear": 66,
+      "hasAff": false,
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ]
+    },
+    {
+      "slug": "contabo",
+      "name": "Contabo",
+      "tagline": "大硬盘便宜的德国商家",
+      "availability": "up",
+      "offerCount": 5,
+      "cheapestPerMonth": 5.99,
+      "cheapestPerYear": 71.88,
+      "hasAff": false,
+      "regions": [
+        "EU",
+        "US-EAST",
+        "ASIA"
+      ]
+    },
+    {
+      "slug": "linode",
+      "name": "Linode",
+      "tagline": "Akamai 旗下老牌商家",
+      "availability": "up",
+      "offerCount": 4,
+      "cheapestPerMonth": 5,
+      "cheapestPerYear": 60,
+      "hasAff": false,
+      "regions": [
+        "US-EAST",
+        "EU",
+        "ASIA"
+      ]
+    },
+    {
+      "slug": "hetzner",
+      "name": "Hetzner",
+      "tagline": "德国裸价性能猛兽",
+      "availability": "up",
+      "offerCount": 4,
+      "cheapestPerMonth": 4.52,
+      "cheapestPerYear": 54.24,
+      "hasAff": false,
+      "regions": [
+        "EU"
+      ]
+    },
+    {
+      "slug": "ovhcloud",
+      "name": "OVHcloud",
+      "tagline": "法国大厂防 DDoS 出名",
+      "availability": "up",
+      "offerCount": 4,
+      "cheapestPerMonth": 4.54,
+      "cheapestPerYear": 54.48,
+      "hasAff": false,
+      "regions": [
+        "EU",
+        "US-EAST"
+      ]
+    },
+    {
+      "slug": "vmiss",
+      "name": "VMISS",
+      "tagline": "亚洲优化线路老商家",
+      "availability": "up",
+      "offerCount": 4,
+      "cheapestPerMonth": 1.8,
+      "cheapestPerYear": 21.6,
+      "hasAff": false,
+      "regions": [
+        "ASIA",
+        "US-WEST"
+      ]
+    },
+    {
+      "slug": "digitalocean",
+      "name": "DigitalOcean",
+      "tagline": "开发者友好带快照",
+      "availability": "up",
+      "offerCount": 3,
+      "cheapestPerMonth": 6,
+      "cheapestPerYear": 72,
+      "hasAff": false,
+      "regions": [
+        "US-EAST",
+        "EU"
+      ]
+    },
+    {
+      "slug": "dogyun",
+      "name": "Dogyun",
+      "tagline": "港日机房网络稳",
+      "availability": "up",
+      "offerCount": 3,
+      "cheapestPerMonth": 4.83,
+      "cheapestPerYear": 58,
+      "hasAff": false,
+      "regions": [
+        "ASIA"
+      ]
+    },
+    {
+      "slug": "wapac",
+      "name": "WAP.AC",
+      "tagline": "台湾机房超低年付",
+      "availability": "up",
+      "offerCount": 3,
+      "cheapestPerMonth": 1,
+      "cheapestPerYear": 12,
+      "hasAff": false,
+      "regions": [
+        "ASIA"
+      ]
+    },
+    {
+      "slug": "hosthatch",
+      "name": "HostHatch",
+      "tagline": "欧洲大硬盘便宜货",
+      "availability": "up",
+      "offerCount": 3,
+      "cheapestPerMonth": 0.58,
+      "cheapestPerYear": 7,
+      "hasAff": false,
+      "regions": [
+        "EU",
+        "US-EAST"
+      ]
+    },
+    {
+      "slug": "cloudserver",
+      "name": "CloudServer",
+      "tagline": "多机房入门年付",
+      "availability": "up",
+      "offerCount": 2,
+      "cheapestPerMonth": 0.83,
+      "cheapestPerYear": 10,
+      "hasAff": false,
+      "regions": [
+        "US-WEST"
+      ]
+    }
+  ],
+  "lastRun": {
+    "startedAt": "2026-11-25T07:20:00.671Z",
+    "finishedAt": "2026-11-25T07:20:20.270Z",
+    "total": 18,
+    "up": 18,
+    "down": 0,
+    "unknown": 0,
+    "durationMs": 19599
+  },
+  "official": {
+    "updatedAt": "2026-11-25T07:20:30.383Z",
+    "slugs": [
+      "bandwagon",
+      "dedione",
+      "colocrossing",
+      "bytevirt",
+      "ovhcloud"
+    ],
+    "counts": {
+      "bandwagon": 51,
+      "dedione": 9,
+      "colocrossing": 5,
+      "bytevirt": 7,
+      "ovhcloud": 4
+    },
+    "offerCount": 76
+  }
+}
