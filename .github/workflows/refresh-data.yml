@@ -21,16 +21,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # setup-node 的 cache: pnpm 需要 pnpm 已在 PATH，所以 pnpm 必须先装
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: pnpm
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 12
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
