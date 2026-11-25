@@ -1,25 +1,26 @@
 <script setup lang="ts">
-import type { Availability, Offer } from '#shared/types'
+import type { Availability, HomeResponse, Offer } from '#shared/types'
+import homeData from '~~/data/site/home.json'
 
 useSeoMeta({
   title: 'VPS 报价单 · 全网 VPS 每日核价 · 人民币实时换算 · 机房测速选购',
   description: '全网 VPS 套餐按年付总价统一排序，美元标价实时汇率折算人民币；机房连通性每日 04:00 自动检测，支持按你的网络位置测速推荐机房区域。'
 })
 
-const { data: home } = await useFetch('/api/home')
+const home = homeData as unknown as HomeResponse
 
-const stats = computed(() => home.value?.stats)
-const cheapest = computed<Offer[]>(() => home.value?.cheapest ?? [])
-const featured = computed<Offer[]>(() => home.value?.featured ?? [])
+const stats = computed(() => home.stats)
+const cheapest = computed<Offer[]>(() => home.cheapest ?? [])
+const featured = computed<Offer[]>(() => home.featured ?? [])
 
 /** 厂商查表：给 OfferSheet 的 name/status 用 */
 const providerInfo = computed<Record<string, { name: string; availability: Availability }>>(() => {
   const map: Record<string, { name: string; availability: Availability }> = {}
-  for (const p of home.value?.providers ?? []) map[p.slug] = { name: p.name, availability: p.availability }
+  for (const p of home.providers ?? []) map[p.slug] = { name: p.name, availability: p.availability }
   return map
 })
 const topProviders = computed(() =>
-  [...(home.value?.providers ?? [])]
+  [...(home.providers ?? [])]
     .sort((a, b) => b.offerCount - a.offerCount)
     .slice(0, 8)
 )
@@ -31,7 +32,7 @@ const providerRows = computed(() =>
     tagline: p.tagline,
     regions: p.regions,
     availability: p.availability,
-    lastCheckedAt: home.value?.stats.updatedAt ?? null,
+    lastCheckedAt: home.stats.updatedAt ?? null,
     failStreak: 0,
     offerCount: p.offerCount,
     cheapestPerMonth: p.cheapestPerMonth
@@ -48,7 +49,7 @@ const windows = [
 
 const fmtDate = (iso: string) => iso.slice(0, 10)
 const { fmtPrice, fmtWindow, fmtYear } = useFx()
-const official = computed(() => home.value?.official ?? null)
+const official = computed(() => home.official ?? null)
 </script>
 
 <template>

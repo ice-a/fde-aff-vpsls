@@ -4,7 +4,7 @@ import { cycleLabel } from '#shared/format'
 
 /**
  * 报价单表格：首页最便宜榜 / 筛选结果共用。
- * 所有购买链接统一走 /go/:slug（服务端替换成你的 aff），src 标记来源便于分析。
+ * 所有购买链接统一走 /go/:slug（构建期生成的静态跳转页，落地时换成你的 aff），src 标记来源便于分析。
  */
 const props = withDefaults(
   defineProps<{

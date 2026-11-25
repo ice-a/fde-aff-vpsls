@@ -1,134 +1,89 @@
-# 部署到 1核1G 服务器（Docker Compose）
+# 部署到 GitHub Pages
 
-纯自建部署：**Node 内置 SQLite**（零外部数据库）、**Docker Compose 一条命令启动**、**资源限制写死**。
+站点是**纯静态站**：构建产物只有 HTML/CSS/JS，没有服务端进程、没有数据库、没有容器。GitHub Actions 负责构建发布，每天再跑一次数据管道。
 
-## 一、资源实测（本机实跑，非估算）
+## 一、一次性设置
 
-| 指标 | 数值 |
-| --- | --- |
-| 启动后内存 RSS | **86 MB** |
-| 20 并发 × 20 轮压测后 RSS | **261 MB** |
-| 压测后私有内存 | 271 MB |
-| CPU 累计（400 次请求） | 6.7 s |
-| `node:sqlite` 数据库体积 | **4 KB**（4 条记录） |
-| 依赖数量 | Nuxt + Vue，**无任何数据库驱动** |
+1. 仓库 **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
+2. `app.baseURL` 保持默认 `/fde-aff-vpsls/`（Pages 项目页 = `https://<用户>.github.io/<仓库>/`）。
+   - 绑自定义域名：在 Pages 设置里填域名 + 配好 CNAME/DNS 后，把 `nuxt.config.ts` 的 `baseURL` 改成 `'/'`（或给构建环境加 `NUXT_APP_BASE_URL=/`）。
+3. 推 `main` 即触发首次发布（工作流 `deploy-pages`）。
 
-1核1G 机型：系统 ~250MB + 容器限额 400MB = **安全余量充足**。容器内存硬上限设为 **400M**，超了只会 GC 不会拖死整机。
+之后：**每次 push 到 main 都会重新构建并发布**。
 
-## 二、部署三步
+## 二、两条工作流
 
-```bash
-# 1. 拉代码
-git clone https://github.com/ice-a/vpsls.git
-cd vpsls
+| 工作流 | 触发 | 干什么 |
+| --- | --- | --- |
+| `deploy-pages` | push 到 main / 手动 | `pnpm install` → `pnpm run generate` → 上传 `.output/public` → 发布 |
+| `refresh-data` | 每天 04:00（北京时间，cron `0 20 * * *` UTC）/ 手动 | 跑检测 + 抓取 + 汇率 → 写 `data/` → 提交到 main → 触发上面的发布 |
 
-# 2. 配置（可选，不改也能跑）
-cp .env.example .env
-#   编辑 .env：APP_PORT=3000、CRON_SECRET=你的随机串
+`refresh-data` 需要仓库的 **Settings → Actions → General → Workflow permissions** 设为 *Read and write permissions*（否则推送数据提交会失败）。
 
-# 3. 构建并启动
-docker compose up -d --build
-```
-
-访问 `http://服务器IP:3000`。
-
-首次构建约 3-5 分钟（要装依赖 + 构建 Nuxt）。之后更新：
+## 三、本地跑一遍
 
 ```bash
-git pull && docker compose up -d --build
+pnpm install
+pnpm run data:refresh      # 可选：先刷一轮数据（约 30s，需要外网）
+pnpm run generate          # 产物在 .output/public
+npx serve .output/public   # 本地预览静态产物
 ```
 
-## 三、数据持久化
+注意本地预览时站点挂在站点根路径，而线上挂在 `/fde-aff-vpsls/` 下——预览时用 `/fde-aff-vpsls/index.html` 之类的路径，或者临时 `NUXT_APP_BASE_URL=/ pnpm run generate` 生成一份根路径版本。
 
-- SQLite 数据库落在 Docker 卷 `vpsls-data` → 容器内 `/data/vpsls.db`
-- 重建容器、升级镜像**数据不丢**
-- 备份：`docker compose exec app cp /data/vpsls.db /data/backup-$(date +%F).db`
-- 导出到宿主机：`docker cp vpsls:/data/vpsls.db ./backup.db`
+## 四、每日数据是怎么更新的
 
-表结构（单表）：
-
-```sql
-CREATE TABLE documents (
-  key        TEXT PRIMARY KEY,   -- state.json / rates.json / official/plans.json ...
-  data       TEXT NOT NULL,      -- 整份 JSON
-  updated_at TEXT NOT NULL
-);
+```
+data/state.json          检测状态（连续失败计数、最近一轮汇总）
+data/site/home.json      首页聚合：统计 / 最便宜榜 / 推荐位 / 厂商摘要
+data/site/offers.json    套餐全量（筛选器在浏览器里实时筛）
+data/site/providers.json 服务商目录 + 最近检测汇总
+data/site/rates.json     汇率
+data/site/status.json    站点状态
 ```
 
-查看内容：
+这些文件**随仓库提交**，所以：
 
-```bash
-docker compose exec app node -e "
-const {DatabaseSync}=require('node:sqlite');
-const db=new DatabaseSync('/data/vpsls.db');
-console.log(db.prepare('SELECT key,updated_at FROM documents').all());
-"
-```
-
-## 四、每日任务
-
-容器内**自带定时器**（进程存活即生效）：每天 **04:00（北京时间）** 自动跑检测 + 官方套餐抓取。
-
-如需外部兜底或手动触发：
-
-```bash
-curl -X POST "http://服务器IP:3000/api/cron?key=你的CRON_SECRET"
-```
-
-服务器 crontab 兜底（可选）：
-
-```bash
-0 4 * * * curl -fsS -X POST "http://127.0.0.1:3000/api/cron?key=你的CRON_SECRET"
-```
+- 本地 clone 下来直接构建就有数据（快照即上一次刷新结果）；
+- 每日工作流刷新后提交 → Pages 自动重建 → 线上数据当天生效；
+- 想立刻更新：在 Actions 里手动触发 `refresh-data`。
 
 ## 五、验收清单
 
 ```bash
-BASE=http://服务器IP:3000
+# 产物结构
+ls .output/public/index.html .output/public/deals/index.html .output/public/404.html
+ls .output/public/go/racknerd/index.html      # 每个厂商一张跳转页
 
-curl -s $BASE/api/storage
-# {"backend":"sqlite","path":"/data/vpsls.db","rows":4,"driver":"node:sqlite","node":"v22.x"}
+# 跳转页里的最终目标（含 aff）
+grep -o 'http-equiv="refresh"[^>]*' .output/public/go/racknerd/index.html
 
-curl -s -X POST "$BASE/api/cron?key=你的密钥"
-# {"ok":true,"storage":{"backend":"sqlite","rows":4},"check":{"up":18,...},"errors":[]}
+# 页面里确实带了数据（而不是空壳）
+grep -c 'class="sheet"' .output/public/index.html
 
-curl -s $BASE/api/status          # lastRun 有 finishedAt
-curl -s "$BASE/api/offers?window=180" | head -c 120   # 含 perYear
-curl -s -o /dev/null -w "%{http_code}\n" $BASE/       # 200
+# base 路径正确
+grep -o 'baseURL:"[^"]*"' .output/public/index.html
 ```
 
-## 六、常用运维
+## 六、故障排查
 
-```bash
-docker compose logs -f app          # 看日志
-docker compose stats                # 看实时资源占用
-docker compose restart app          # 重启
-docker compose down                 # 停止（数据卷保留）
-docker compose down -v              # 停止并删数据（慎用）
-```
+| 现象 | 原因 / 处理 |
+| --- | --- |
+| 打开 404 | Pages 的 Source 没选 GitHub Actions；或 `baseURL` 与实际路径不符 |
+| 页面能开但样式/脚本全丢 | `baseURL` 与部署路径不一致，资源链接 404；用 `NUXT_APP_BASE_URL` 覆盖 |
+| 数据停在旧时间 | `refresh-data` 工作流失败（看 Actions 日志，多半是外网抓取被墙/超时）；手动触发一次即可 |
+| 提交数据失败 | Workflow permissions 是只读；改成 *Read and write permissions* |
+| 某厂商一直标 DOWN | 官网真的打不开（403 会被当作在线）；连续 3 轮失败才标 DOWN |
+| 抓取官网套餐失败 | 反爬/客户端渲染，页面会回退种子价并标 `source=seed`；解析规则在 `scripts/lib/scrape.ts` |
 
-## 七、反向代理（可选）
+## 七、为什么是静态站
 
-如果机器上有 Caddy/Nginx，转发到 `127.0.0.1:3000` 即可。Caddy 一行：
+| | 旧版（SSR + SQLite + Docker） | 现在（GitHub Pages 静态） |
+| --- | --- | --- |
+| 运行成本 | 要一台服务器（或容器平台） | 0，GitHub Pages 免费托管 |
+| 数据新鲜度 | 进程内定时器每天跑 | Actions 每天跑，跑完自动重建 |
+| 状态持久化 | SQLite 文件 + 持久卷 | 仓库里的 JSON（随提交留档） |
+| 出口跳转 | 服务端 302 | 构建期生成的静态跳转页 |
+| 访问统计 | 服务端埋点 + /stats 看板 | **没有**（静态站没有服务端可记账） |
 
-```
-vps.example.com {
-    reverse_proxy 127.0.0.1:3000
-}
-```
-
-## 八、已知边界
-
-1. **Node 版本要求 ≥ 22.5**：`node:sqlite` 是内置模块，Dockerfile 用 `node:22-alpine` 已满足。自己跑源码需要 `node -v` ≥ 22.5。
-2. **单实例**：SQLite WAL 支持并发读、单写。单容器单实例完全够用；不要水平扩到多容器共用一个 db 文件。
-3. **首次请求**：SQLite 同步读取，**无异步空窗**（这点比之前的 Mongo 方案更干净）。
-4. **官方套餐抓取**：6 个源里 bandwagon/colocrossing/bytevirt/dedione/wapac/ovh，国外 VPS 访问这些站点可能较慢，单次抓取约 10-30 秒，超时 20 秒会跳过该源并回退种子价。
-
-## 九、如果还想再轻
-
-当前已经是「Nuxt SSR + 内置 SQLite + 无外部依赖」的最小可用组合。若要进一步压到 ~80MB 常驻：
-
-- 把 SSR 改成纯静态（`nitro.preset = 'static'`），API 用外部服务 → 失去服务端筛选/统计
-- 或者重写为 Hono + Preact（工作量大，收益是内存从 261MB 降到 ~90MB）
-
-**当前 400M 限额下 1核1G 完全跑得动，不建议为此重写。**
+代价是明确的：**访问统计页没了**，手动「立即检测/刷新套餐」按钮也没了（改成在 Actions 里手动触发）。换来的好处是零运维、零成本、零故障面。

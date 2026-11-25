@@ -34,9 +34,11 @@
 
 ## 申请通用套路（3 步）
 
-1. **先注册账号**——上面 12 家自助型都是注册完在客户后台找 `Affiliates / Referrals / 推广` 菜单，点激活即出专属链接。
+1. **先注册账号**——上面 12 家自助型都是注册完在客户后台找 `Affiliates / Referrals / 推广` 菜单，点激活就出专属链接。
 2. **拿链接填进 [shared/aff.ts](shared/aff.ts)**——有 `?ref=`/`?aff=` 的填 `PROVIDER_AFF[slug]`；CJ 类（Contabo）把 CJ 给的完整跟踪链接整条填进去。
-3. **验证**——`curl -I 你的域名/go/厂商slug`，看 `Location` 是不是你的链接；站内 `/stats` 页能看到这条出口被点了多少次。
+3. **验证**——提交后等 Pages 重新发布，打开 `你的域名/go/厂商slug` 看是否跳到你的链接；或本地 `pnpm run generate` 后看 `.output/public/go/厂商slug/index.html` 里的 `meta http-equiv="refresh"` 目标地址。
+
+> 跳转页是构建期生成的静态页：改 `shared/aff.ts` 后要重新构建发布才会生效（推 main 即可，Actions 自动重建）。
 
 ## 建议优先级
 

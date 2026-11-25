@@ -1,54 +1,16 @@
 <script setup lang="ts">
+import type { ProvidersResponse } from '#shared/types'
+import providersData from '~~/data/site/providers.json'
+
 useSeoMeta({
   title: '服务商目录与状态 · VPS 报价单',
   description: '全部 VPS 服务商一览：套餐数、最低月付、官网连通性每日 04:00 自动检测。'
 })
 
-const { data, refresh } = await useFetch('/api/providers')
+const providersRes = providersData as unknown as ProvidersResponse
 
-const checking = ref(false)
-const lastManual = ref<string | null>(null)
-const errorMsg = ref<string | null>(null)
-
-/** 手动触发一轮检测（与每日 04:00 的定时任务同一实现） */
-const triggerCheck = async () => {
-  checking.value = true
-  errorMsg.value = null
-  try {
-    const res = await $fetch<{ run: { up: number; down: number; total: number; durationMs: number } }>('/api/check', {
-      method: 'POST'
-    })
-    lastManual.value = `up ${res.run.up} · down ${res.run.down} · ${res.run.total} 家 · 耗时 ${Math.round(res.run.durationMs / 1000)}s`
-    await refresh()
-  } catch (e) {
-    errorMsg.value = '检测请求失败，看下服务端日志。'
-  } finally {
-    checking.value = false
-  }
-}
-
-// 官方套餐源手动刷新（force 绕过 24h 缓存）
-const refetching = ref(false)
-const refetchMsg = ref<string | null>(null)
-const triggerRefetch = async () => {
-  refetching.value = true
-  refetchMsg.value = null
-  try {
-    const res = await $fetch<{ ok: string[]; fail: string[]; totalPlans: number; durationMs: number }>(
-      '/api/refetch?force=1',
-      { method: 'POST' }
-    )
-    refetchMsg.value = `✔ 官方源刷新：成功 ${res.ok.length} 家（${res.totalPlans} 条套餐），失败 ${res.fail.length} 家 · ${Math.round(res.durationMs / 1000)}s`
-    await refresh()
-  } catch {
-    refetchMsg.value = '✘ 官方源刷新失败，看下服务端日志。'
-  } finally {
-    refetching.value = false
-  }
-}
-
-const providers = computed(() => data.value?.providers ?? [])
-const lastRun = computed(() => data.value?.lastRun ?? null)
+const providers = computed(() => providersRes.providers ?? [])
+const lastRun = computed(() => providersRes.lastRun ?? null)
 </script>
 
 <template>
@@ -65,15 +27,10 @@ const lastRun = computed(() => data.value?.lastRun ?? null)
         </p>
 
         <div class="prov-head" style="margin-top: 28px">
-          <button class="btn btn-primary" type="button" :disabled="checking" @click="triggerCheck">
-            {{ checking ? '检测中…' : '⚡ 立即触发检测' }}
-          </button>
-          <button class="btn" type="button" :disabled="refetching" @click="triggerRefetch">
-            {{ refetching ? '抓取中…' : '⟳ 刷新官方套餐' }}
-          </button>
-          <span v-if="lastManual" class="mono" style="color: var(--accent); font-size: 13px">✔ 手动轮次完成：{{ lastManual }}</span>
-          <span v-if="refetchMsg" class="mono" style="color: var(--accent); font-size: 13px">{{ refetchMsg }}</span>
-          <span v-if="errorMsg" class="mono" style="color: var(--accent-clay); font-size: 13px">{{ errorMsg }}</span>
+          <span class="mono muted" style="font-size: 12px">
+            检测与官方套餐抓取由 GitHub Actions 每天 04:00（北京时间）自动执行，跑完即重建本站；
+            需要立刻刷新可在仓库的 Actions 里手动触发一次 refresh-data。
+          </span>
         </div>
       </div>
     </section>

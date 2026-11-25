@@ -1,6 +1,6 @@
 /**
  * 全站货币展示层：USD 标价 + 实时汇率换算 CNY。
- *  - 汇率来自 GET /api/rates（服务端 6h 缓存双源），由 app.vue 启动时注入 setFxRates()
+ *  - 汇率来自 data/site/rates.json（每日管道抓取，构建时内联），由 app.vue 启动时注入 setFxRates()
  *  - 展示币种 CNY/USD 可切换，localStorage 记忆，默认 CNY（对外中文站优先人民币）
  *  - 所有价格组件调 useFx().fmtPrice(usd)，主显当前币种，副显另一种，汇率没到时优雅降级为 $
  */

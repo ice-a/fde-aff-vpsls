@@ -1,9 +1,17 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import { SEED_PROVIDERS } from './shared/data/providers'
+
+/** Pages 项目页的仓库路径前缀；绑自定义域名时改成 '/'（也可用 NUXT_APP_BASE_URL 覆盖） */
+const baseURL = process.env.NUXT_APP_BASE_URL || '/fde-aff-vpsls/'
 
 /**
- * 部署目标通过环境变量切换，默认本地 node-server：
- *   NITRO_PRESET=cloudflare_pages   → Cloudflare Pages（构建产物 dist/）
- *   NITRO_PRESET=node-server        → 本地/自有服务器（.output/server/index.mjs）
+ * 静态站配置（GitHub Pages）：
+ *   app.baseURL —— Pages 项目页的仓库路径前缀（见上方 baseURL）；绑自定义域名时改成 '/'
+ *   nitro.preset —— static：构建产物是纯静态文件，扔到任意静态托管都能跑
+ *   prerender    —— 预渲染所有页面 + 每个厂商的 /go/<slug> 出口跳转页
+ *
+ * 每日数据（检测结果 / 官方套餐 / 汇率）由 scripts/refresh-data.ts 写进
+ * data/site/*.json，前端构建时直接 import，运行时不再有任何服务端依赖。
  */
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -19,6 +27,7 @@ export default defineNuxtConfig({
   ],
 
   app: {
+    baseURL,
     head: {
       htmlAttrs: { lang: 'zh-CN' },
       title: 'VPS 报价单 · 全网 VPS 每日核价 · 人民币实时换算 · 机房测速选购',
@@ -31,12 +40,24 @@ export default defineNuxtConfig({
         },
         { name: 'theme-color', content: '#0b0f14' }
       ],
-      link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
+      link: [{ rel: 'icon', type: 'image/svg+xml', href: `${baseURL}favicon.svg` }]
     }
   },
 
-  routeRules: {
-    '/api/**': { cors: true, headers: { 'cache-control': 'no-store' } }
+  nitro: {
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/deals',
+        '/guide',
+        '/providers',
+        // 出口跳转页：每个厂商一张静态跳转页（服务端 302 的静态替代）
+        ...SEED_PROVIDERS.map(p => `/go/${p.slug}`)
+      ],
+      failOnError: true
+    }
   },
 
   typescript: { strict: true }

@@ -1,11 +1,17 @@
 <script setup lang="ts">
+import type { RatesResponse, StatusResponse } from '#shared/types'
+import ratesData from '~~/data/site/rates.json'
+import statusData from '~~/data/site/status.json'
+
 const route = useRoute()
-const { data: home } = await useFetch('/api/home')
-const { data: rates } = await useFetch('/api/rates')
+
+// 静态数据：构建期由 scripts/refresh-data.ts 生成，这里直接内联进产物
+const status = statusData as unknown as StatusResponse
+const rates = ratesData as unknown as RatesResponse
 
 // 汇率注入全局货币层（SSR 渲染前完成，避免水合闪烁）
 const { setFxRates, currency, toggle, rateLabel } = useFx()
-setFxRates(rates.value as any)
+setFxRates(rates)
 // 客户端挂载后再读本地偏好（默认 CNY 先渲染，避免 hydration mismatch）
 onMounted(() => {
   try {
@@ -22,7 +28,7 @@ useHead({
 const isActive = (path: string) => route.path === path
 
 // 页脚状态条
-const lastRun = computed(() => home.value?.lastRun ?? null)
+const lastRun = computed(() => status.lastRun ?? null)
 const fmtTime = (iso: string) => {
   const d = new Date(iso)
   const p = (n: number) => String(n).padStart(2, '0')
@@ -49,7 +55,6 @@ const fmtTime = (iso: string) => {
           <NuxtLink to="/deals" class="nav-link" :class="{ on: isActive('/deals') }">实时筛选</NuxtLink>
           <NuxtLink to="/guide" class="nav-link" :class="{ on: isActive('/guide') }">选购方法</NuxtLink>
           <NuxtLink to="/providers" class="nav-link" :class="{ on: isActive('/providers') }">服务商</NuxtLink>
-          <NuxtLink to="/stats" class="nav-link" :class="{ on: isActive('/stats') }">统计</NuxtLink>
         </nav>
 
         <div class="header-status" :title="`汇率 ${rateLabel} · 点击切换币种`">
@@ -84,7 +89,6 @@ const fmtTime = (iso: string) => {
           <NuxtLink to="/deals">实时筛选器</NuxtLink>
           <NuxtLink to="/guide">测速选购方法</NuxtLink>
           <NuxtLink to="/providers">服务商状态</NuxtLink>
-          <NuxtLink to="/stats">访问统计</NuxtLink>
         </div>
         <div class="footer-col">
           <h4>口径</h4>

@@ -1,40 +1,61 @@
-# VPS 报价单（vpsls 同款 · 前后端不分离）
+# VPS 报价单（vpsls 同款 · 纯静态站）
 
-仿 [vpsls.com](https://vpsls.com/) 模式的 VPS 优惠聚合站：**Nuxt 4 SSR 单体**（页面与 API 同进程、同端口）、**服务商连通性每日 04:00 自动检测**、**全站推广链接统一出口替换**、UI 全新设计（机房报价单 / 工业仪表盘风）。
+仿 [vpsls.com](https://vpsls.com/) 模式的 VPS 优惠聚合站：**Nuxt 4 纯静态站**（GitHub Pages 托管）、**服务商连通性每日 04:00 自动检测**、**全站推广链接统一出口替换**、UI 全新设计（机房报价单 / 工业仪表盘风）。
 
-**持久化**：Node 内置 `node:sqlite`（零依赖，无外部数据库）。
-**部署**：Docker Compose 一条命令，适配 1核1G。详见 [DEPLOY.md](DEPLOY.md)。
+- **部署**：GitHub Pages —— 构建产物就是一堆 HTML/CSS/JS，没有服务端、没有数据库、没有容器。
+- **每日数据**：GitHub Actions 每天 04:00（北京时间）跑一轮「检测 + 抓取 + 汇率」，把结果写回仓库并提交，提交自动触发 Pages 重建。
 
 ## 快速开始
 
 ```bash
-# Docker（推荐，1核1G 可跑）
-docker compose up -d --build     # 访问 http://IP:3000
-
-# 本地开发（需 Node ≥ 22.5，node:sqlite 内置）
+# 本地开发（Node ≥ 22.18）
 pnpm install
 pnpm dev                          # http://localhost:3000
 
-# 本地生产
-pnpm build && pnpm start
+# 手动刷新一次每日数据（检测 + 抓取 + 汇率 → data/site/*.json）
+pnpm run data:refresh
+
+# 生成静态站（产物在 .output/public）
+pnpm run generate
+
+# 本地预览静态产物
+npx serve .output/public
 ```
 
-页面：`/` 首页（榜单+推荐+状态）、`/deals` 实时筛选器、`/guide` 测速选购方法、`/providers` 服务商目录、`/stats` 访问统计。
+页面：`/` 首页（榜单+推荐+状态）、`/deals` 实时筛选器、`/guide` 测速选购方法、`/providers` 服务商目录。
 各厂商联盟申请入口与步骤：[AFFILIATES.md](AFFILIATES.md)。
 
 **展示与推荐口径（对外三原则）**：
-- **年付主显**：价格列以「年付总价」为主（`/年`），月均与另一币种作辅助行；`perYear = 期价 × 年化倍数`（月付×12 / 季付×4 / 半年×2 / 年付=标价），不走 `perMonth×12` 防舍入漂移。
+- **年付主显**：价格列以「年付总价」为主（`/年`），月均与另一币种作辅助行；`perYear = 期价 × 年化倍数`（月付×12 / 季付×4 / 半年付×2 / 年付=标价），不走 `perMonth×12` 防舍入漂移。
 - **年付优先**：首页最便宜榜只列年付套餐；筛选器默认排序 `recommend`。
 - **有 aff 优先**：配了 [shared/aff.ts](shared/aff.ts) 返佣链接的服务商在推荐序里排前（**前台不展示「返佣」标记**，只影响位次），排序键 `hasAff desc → cycle==yearly desc → perYear asc`，价格在同级内仍然升序——返佣不改价格口径，只改推荐位次。
 - **预算窗口年付化**：首页「按预算快选」与筛选器 `window` 参数为年付总价档位（180/360/600/1200/2400）；旧分享链接 `window=15/30/50/100/200`（月单价）自动 ×12 兼容。
 
-**人民币实时换算**：价格以美元标价，服务端按实时汇率（jsdelivr currency-api 主源 / open.er-api.com 备源，6h 缓存，启动预热）换算人民币；全站价格主显 ¥/$ 可在顶栏切换（localStorage 记忆），`GET /api/rates` 查当前汇率。
+**人民币实时换算**：价格以美元标价，每日管道按实时汇率（jsdelivr currency-api 主源 / open.er-api.com 备源）换算人民币；全站价格主显 ¥/$ 可在顶栏切换（localStorage 记忆）。
 
 **测速选购（/guide）**：识别当前公网 IP 位置（ipwho.is → ipinfo.io）推荐机房区域并一键实测该区域；也可手动选点测 9 个区域的延迟（浏览器 no-cors 计时取多目标最小值 ≈ RTT），最快区域直达筛选器。
 
+## 静态站是怎么跑起来的
+
+```
+scripts/refresh-data.ts          ← 每日管道（GitHub Actions 04:00 跑）
+  ├─ check      连通性检测 18 家官网 → data/state.json
+  ├─ scrape     6 家官方套餐页抓取解析
+  ├─ rates      美元兑人民币汇率
+  └─ derive     派生视图 → data/site/{home,offers,providers,rates,status}.json
+                    ↓ 提交到 main
+        .github/workflows/pages.yml  ← 构建并发布
+                    ↓
+              nuxt generate → .output/public → GitHub Pages
+                    ↓
+        前端构建时直接 import data/site/*.json（运行时零请求）
+```
+
+页面上的所有数字都来自这批 JSON：**检测状态、套餐价、汇率**都在构建那一刻固化进产物，所以站点打开后不依赖任何后端。
+
 ## 把 aff 换成你的（全站唯一入口）
 
-**所有**对外链接只从 [shared/aff.ts](shared/aff.ts) 出去，站内统一走 `/go/:slug` 302 出口：
+**所有**对外链接只从 [shared/aff.ts](shared/aff.ts) 出去，站内统一走 `/go/:slug` 出口（每个厂商一张静态跳转页，构建期生成）：
 
 ```ts
 // 方式一：全局兜底（最常用）
@@ -49,86 +70,50 @@ PROVIDER_AFF: {
 }
 ```
 
-改完 `pnpm build` 重启即可。验证：
+改完提交即可（构建时读 `shared/aff.ts`，跳转页与 `hasAff` 推荐位次都会跟着变）。
 
-```bash
-curl -I http://127.0.0.1:3000/go/racknerd
-# Location: https://racknerd.com?ref=你的ID
-```
+验证：构建后看 `.output/public/go/racknerd/index.html`，里面的 `meta http-equiv="refresh"` 目标就是最终跳转地址。
 
-可选埋点：环境变量 `AFF_BEACON=https://你的收集端点`，每次出口跳转会附带 `p=<厂商>&src=<来源>` 上报。
+可选埋点：在 `shared/aff.ts` 填 `CLICK_BEACON: 'https://你的收集端点'`，跳转前会带 `p=<厂商>&src=<来源>&offer=<套餐id>` 上报一次。
 
 ## 每日自动检测
 
-- 实现：[server/utils/scheduler.ts](server/utils/scheduler.ts)，由 server 启动插件 [server/plugins/availability.ts](server/plugins/availability.ts) 注册。
-- 规则：每天 **04:00** 逐个 GET 18 家服务商官网（并发 6、超时 8s、重试 1 次），2xx/3xx/401/403 视为在线；**连续 3 轮全失败标 DOWN**，恢复即回 UP；进程启动时距上次检测 >20h 自动补跑。
-- 结果落盘 `.data/state.json`（重启不丢；部署时把 `.data` 挂持久卷）。
-- 手动触发 / 外部 cron 调用：
-
-```bash
-curl -X POST http://127.0.0.1:3000/api/check
-# {"ok":true,"run":{"up":18,"down":0,"total":18,"durationMs":18073}}
-```
-
-多实例部署时只留一个实例注册定时器，其余实例设 `CHECK_DISABLED` 语义或直接用外部 cron 调上面的接口（结果幂等）。
-
-## API 一览（同端口同进程）
-
-| 路由 | 说明 |
-| --- | --- |
-| `GET /api/home` | 首页聚合：统计/最便宜榜/推荐位/厂商摘要 |
-| `GET /api/offers` | 筛选：`window minRam minCpu minDisk region os cycle provider q sort` |
-| `GET /api/providers` | 服务商目录 + 最近检测汇总 |
-| `GET /api/status` | 最近一轮检测结果 |
-| `POST /api/check` | 手动触发一轮检测 |
-| `POST /api/refetch` | 刷新官方套餐源（`?force=1` 绕过缓存） |
-| `GET /api/stats` | 访问统计聚合（`?days=7\|14\|30\|90`）：每日 PV/点击/搜索 + 三榜 |
-| `GET /api/rates` | 当前 USD→CNY 汇率（实时 + 6h 缓存） |
-| `POST /api/track/search` | 搜索条件上报（筛选器去抖后自动调用） |
-| `GET /go/:slug` | 统一 aff 出口 302（`?src=` 标记来源、`?offer=` 产品级归因） |
+- 实现：[scripts/lib/check.ts](scripts/lib/check.ts)（探测逻辑）+ [scripts/refresh-data.ts](scripts/refresh-data.ts)（编排）。
+- 规则：每天 **04:00** 逐个 GET 18 家服务商官网（并发 6、超时 8s、重试 1 次），2xx/3xx/401/403 视为在线；**连续 3 轮全失败标 DOWN**，恢复即回 UP。
+- 状态落 `data/state.json`（随仓库提交，跨轮保留连续失败计数）；全员探测失败时判定为网络故障，**不更新状态**，避免把整站误标 DOWN。
+- 想立刻跑一轮：Actions 里手动触发 `refresh-data`（workflow_dispatch）。
 
 ## 套餐数据：官方抓取 + 种子回退
 
-- **官方源（每日自动刷新 + 手动触发）**：`POST /api/refetch?force=1` 强刷、`POST /api/refetch` 走 24h 缓存；抓取调度与每日检测同频（04:00）。
-- **当前可抓 6 家**（结构已实测解剖）：搬瓦工/ColoCrossing/Bytevirt/DediOne/WAP.AC/OVH —— 套餐行打 `官方实时` 徽标，`source=official`。
-- **抓不动的 12 家**（反爬 403 / 套餐名客户端渲染 / 无静态价）：回退内置种子价，`source=seed`，页面如实标注；给 `OFFICIAL_SOURCES`（[server/scrape/official.ts](server/scrape/official.ts)）加一条 source 配置即可纳入。
-- 解析器结构依据 `.probe/` 的官方页真实样本（WHMCS 新旧两模板 + wapac + OVH 卡片）；解析 0 条 = 判失败回种子，绝不半猜半填。
-- HTML 缓存 `.data/official/html-cache.json`（24h），解析结果 `.data/official/plans.json`，部署挂持久卷。
-
-## 访问统计
-
-- 全局中间件 [server/middleware/track.ts](server/middleware/track.ts)：页面打开（HTML GET）自动记 PV；`/go/:slug` 出口点击记到**产品**（`?offer=of_xxx`）或**厂商**（无 offer 时 `provider:slug`）。
-- 筛选器条件变化去抖 800ms 上报到 `/api/track/search`，按「归一化条件串」聚合（如 `region=ASIA&window=15`）。
-- 数据落 `.data/analytics.json`，看板页 `/stats`（趋势柱状图 + 页面榜/产品点击榜/搜索条件榜），底层接口 `GET /api/stats`。
+- **官方源（每日自动刷新）**：搬瓦工 / ColoCrossing / Bytevirt / DediOne / WAP.AC / OVH —— 抓到的套餐行打「官方实时」徽标，`source=official`。
+- **抓不动的厂商**（反爬 403 / 套餐名客户端渲染 / 无静态价）：回退内置种子价，`source=seed`，页面如实标注；给 [scripts/lib/scrape.ts](scripts/lib/scrape.ts) 的 `OFFICIAL_SOURCES` 加一条 source 配置即可纳入。
+- 解析 0 条 = 判失败回种子，绝不半猜半填。
 
 ## 改数据
 
-- 厂商目录：[server/data/providers.ts](server/data/providers.ts)（slug/name/tagline/regions/官网 URL）
-- 套餐目录：[server/data/offers.ts](server/data/offers.ts)（元组一行一条；`perMonth` 自动 = 期价 ÷ 期数）
-- 接真实价格源时：保持 `Offer` 字体结构（[shared/types.ts](shared/types.ts)），替换 `getOffers()` 的取数实现即可，页面与 API 不用动。
+- 厂商目录：[shared/data/providers.ts](shared/data/providers.ts)（slug/name/tagline/regions/官网 URL）
+- 套餐目录：[shared/data/offers.ts](shared/data/offers.ts)（元组一行一条；`perMonth` 自动 = 期价 ÷ 期数）
+- 改完跑 `pnpm run data:refresh && pnpm run generate` 即可看到效果。
 
 ## 目录结构
 
 ```
-app/            # 前端（SSR 页面与组件）
-  pages/        #   /  /deals  /providers
+app/            # 前端（SSR 预渲染成静态页）
+  pages/        #   /  /deals  /guide  /providers  /go/[slug](出口跳转页)
   components/   #   OfferSheet / ProviderSheet / StatusChip
   assets/css/   #   设计系统（Chakra Petch + IBM Plex Mono，墨黑+薄荷绿）
-server/         # 后端（Nitro，同端口）
-  api/          #   JSON 接口
-  routes/go/    #   aff 出口跳转
-  utils/        #   db(状态存储) scheduler(每日检测)
+shared/         # 前后端共享
+  types.ts      #   类型 + 静态数据文件的结构定义
+  aff.ts        #   推广链接唯一出口配置
   data/         #   厂商/套餐种子数据
-shared/         # 前后端共享：types / format / aff 配置
-.data/          # 运行状态（检测结果），持久化目录
+scripts/        # 每日数据管道（Node ≥ 22.18 直接跑 .ts）
+  refresh-data.ts
+  lib/          #   check / scrape / rates / derive / state
+data/           # 管道产物（随仓库提交）
+  state.json    #   检测状态（连续失败计数、最近一轮汇总）
+  site/*.json   #   派生视图：home / offers / providers / rates / status
 ```
 
 ## 部署
 
-任意能跑 Node 的 VPS/容器：
-
-```bash
-pnpm install && pnpm build
-PORT=3000 node .output/server/index.mjs     # 或 pnpm start
-# systemd / pm2 / docker 均可；记得持久化 .data/
-```
+GitHub Pages，详见 [DEPLOY.md](DEPLOY.md)。要点：`pnpm run generate` 产物在 `.output/public`，Actions 自动上传发布；`app.baseURL` 默认 `/fde-aff-vpsls/`（Pages 项目页路径），绑自定义域名时改成 `/`。

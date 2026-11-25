@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import type { Availability, Offer } from '#shared/types'
+import type { Availability, OffersResponse, Offer, ProvidersResponse } from '#shared/types'
+import offersData from '~~/data/site/offers.json'
+import providersData from '~~/data/site/providers.json'
 
 useSeoMeta({
   title: '实时筛选 · VPS 报价单',
@@ -9,14 +11,15 @@ useSeoMeta({
 const route = useRoute()
 const router = useRouter()
 
-const { data: offersRes } = await useFetch('/api/offers')
-const { data: providersRes } = await useFetch('/api/providers')
+// 静态数据：套餐全量在浏览器里筛，服务商表用于名称/状态查表
+const offersRes = offersData as unknown as OffersResponse
+const providersRes = providersData as unknown as ProvidersResponse
 
-const allOffers = computed<Offer[]>(() => offersRes.value?.offers ?? [])
+const allOffers = computed<Offer[]>(() => offersRes.offers ?? [])
 
 const providerInfo = computed<Record<string, { name: string; availability: Availability }>>(() => {
   const map: Record<string, { name: string; availability: Availability }> = {}
-  for (const p of providersRes.value?.providers ?? []) map[p.slug] = { name: p.name, availability: p.availability }
+  for (const p of providersRes.providers ?? []) map[p.slug] = { name: p.name, availability: p.availability }
   return map
 })
 
@@ -76,28 +79,7 @@ const results = computed(() => {
   return [...list].sort(cmp[sort.value] ?? cmp.recommend)
 })
 
-// 状态 → URL 同步（可分享的筛选链接）+ 搜索条件上报（去抖）
-const activeConditions = () => ({
-  window: windowCap.value,
-  q: keyword.value || null,
-  minCpu: minCpu.value || null,
-  minRam: minRam.value || null,
-  minDisk: minDisk.value || null,
-  region: region.value || null,
-  os: os.value || null,
-  cycle: cycle.value || null,
-  provider: provider.value || null,
-  sort: sort.value !== 'recommend' ? sort.value : null
-})
-
-let searchTimer: ReturnType<typeof setTimeout> | null = null
-const reportSearch = () => {
-  if (searchTimer) clearTimeout(searchTimer)
-  searchTimer = setTimeout(() => {
-    $fetch('/api/track/search', { method: 'POST', body: { conditions: activeConditions() } }).catch(() => {})
-  }, 800)
-}
-
+// 状态 → URL 同步（可分享的筛选链接）
 watch(
   [windowCap, minRam, minCpu, minDisk, region, os, cycle, provider, keyword, sort],
   () => {
@@ -113,7 +95,6 @@ watch(
     if (keyword.value) query.q = keyword.value
     if (sort.value !== 'recommend') query.sort = sort.value
     router.replace({ query })
-    reportSearch()
   }
 )
 
@@ -228,7 +209,7 @@ const activeFilters = computed(
             <h5>服务商</h5>
             <select v-model="provider">
               <option value="">全部厂商</option>
-              <option v-for="p in providersRes?.providers ?? []" :key="p.slug" :value="p.slug">{{ p.name }}</option>
+              <option v-for="p in providersRes.providers ?? []" :key="p.slug" :value="p.slug">{{ p.name }}</option>
             </select>
           </div>
         </aside>

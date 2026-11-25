@@ -1,0 +1,51 @@
+name: refresh-data
+
+# 每日数据管道：检测 + 抓取 + 汇率 → 写回 data/ → 提交后触发 Pages 重建。
+# 站点是静态站，没有服务端定时器，所以「每日核价」靠这条工作流。
+on:
+  schedule:
+    - cron: '0 20 * * *' # UTC 20:00 = 北京 04:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Refresh daily data (check + scrape + rates)
+        run: pnpm run data:refresh
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --staged --quiet; then
+            echo "数据无变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "chore(data): 每日刷新检测结果与套餐价"
+          git push
