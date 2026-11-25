@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-25T07:20:30.383Z",
+  "generatedAt": "2026-11-25T12:28:20.056Z",
   "lastRun": {
-    "startedAt": "2026-11-25T07:20:00.671Z",
-    "finishedAt": "2026-11-25T07:20:20.270Z",
+    "startedAt": "2026-11-25T12:27:58.841Z",
+    "finishedAt": "2026-11-25T12:28:16.735Z",
     "total": 18,
-    "up": 18,
-    "down": 0,
+    "up": 17,
+    "down": 1,
     "unknown": 0,
-    "durationMs": 19599
+    "durationMs": 17894
   }
 }

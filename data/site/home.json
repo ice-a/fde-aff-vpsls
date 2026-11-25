@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-25T07:20:30.383Z",
+  "generatedAt": "2026-11-25T12:28:20.056Z",
   "stats": {
     "offerCount": 121,
     "providerCount": 18,
     "regionCount": 5,
-    "updatedAt": "2026-11-25T07:20:20.270Z",
-    "upCount": 18,
-    "downCount": 0
+    "updatedAt": "2026-11-25T12:28:16.735Z",
+    "upCount": 17,
+    "downCount": 1
   },
   "cheapest": [
     {
@@ -642,7 +642,7 @@
       "slug": "cloudserver",
       "name": "CloudServer",
       "tagline": "多机房入门年付",
-      "availability": "up",
+      "availability": "down",
       "offerCount": 2,
       "cheapestPerMonth": 0.83,
       "cheapestPerYear": 10,
@@ -653,29 +653,29 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-11-25T07:20:00.671Z",
-    "finishedAt": "2026-11-25T07:20:20.270Z",
+    "startedAt": "2026-11-25T12:27:58.841Z",
+    "finishedAt": "2026-11-25T12:28:16.735Z",
     "total": 18,
-    "up": 18,
-    "down": 0,
+    "up": 17,
+    "down": 1,
     "unknown": 0,
-    "durationMs": 19599
+    "durationMs": 17894
   },
   "official": {
-    "updatedAt": "2026-11-25T07:20:30.383Z",
+    "updatedAt": "2026-11-25T12:28:20.055Z",
     "slugs": [
       "bandwagon",
       "dedione",
-      "colocrossing",
       "bytevirt",
-      "ovhcloud"
+      "ovhcloud",
+      "colocrossing"
     ],
     "counts": {
       "bandwagon": 51,
       "dedione": 9,
-      "colocrossing": 5,
       "bytevirt": 7,
-      "ovhcloud": 4
+      "ovhcloud": 4,
+      "colocrossing": 5
     },
     "offerCount": 76
   }
