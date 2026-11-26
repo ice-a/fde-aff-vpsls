@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T12:28:20.056Z",
+  "generatedAt": "2026-11-26T02:38:18.410Z",
   "providers": [
     {
       "slug": "racknerd",
@@ -10,7 +10,7 @@
         "US-EAST"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://racknerd.com",
       "offerCount": 4,
@@ -28,7 +28,7 @@
         "ASIA"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://www.vultr.com",
       "offerCount": 4,
@@ -45,7 +45,7 @@
         "EU"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://www.digitalocean.com",
       "offerCount": 3,
@@ -63,7 +63,7 @@
         "ASIA"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://www.linode.com",
       "offerCount": 4,
@@ -79,7 +79,7 @@
         "EU"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://www.hetzner.com",
       "offerCount": 4,
@@ -96,7 +96,7 @@
         "US-EAST"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://www.ovhcloud.com",
       "offerCount": 4,
@@ -114,7 +114,7 @@
         "ASIA"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://contabo.com",
       "offerCount": 5,
@@ -131,7 +131,7 @@
         "ASIA"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://bwh81.net",
       "offerCount": 51,
@@ -148,7 +148,7 @@
         "US-WEST"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://vmiss.com",
       "offerCount": 4,
@@ -164,7 +164,7 @@
         "US-WEST"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://zgovps.com",
       "offerCount": 3,
@@ -180,7 +180,7 @@
         "ASIA"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://www.dogyun.com",
       "offerCount": 3,
@@ -197,7 +197,7 @@
         "EU"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://justhost.ru",
       "offerCount": 3,
@@ -213,7 +213,7 @@
         "US-EAST"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://colocrossing.com",
       "offerCount": 5,
@@ -230,7 +230,7 @@
         "US-WEST"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://bytevirt.com",
       "offerCount": 7,
@@ -246,7 +246,7 @@
         "ASIA"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://wap.ac",
       "offerCount": 3,
@@ -262,7 +262,7 @@
         "US-EAST"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://dedione.com",
       "offerCount": 9,
@@ -278,8 +278,8 @@
         "US-WEST"
       ],
       "availability": "down",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
-      "failStreak": 3,
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
+      "failStreak": 4,
       "url": "https://cloudserver.com",
       "offerCount": 2,
       "cheapestPerMonth": 0.83,
@@ -295,7 +295,7 @@
         "US-EAST"
       ],
       "availability": "up",
-      "lastCheckedAt": "2026-11-25T12:28:16.735Z",
+      "lastCheckedAt": "2026-11-26T02:38:15.402Z",
       "failStreak": 0,
       "url": "https://hosthatch.com",
       "offerCount": 3,
@@ -305,12 +305,12 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-11-25T12:27:58.841Z",
-    "finishedAt": "2026-11-25T12:28:16.735Z",
+    "startedAt": "2026-11-26T02:37:57.816Z",
+    "finishedAt": "2026-11-26T02:38:15.402Z",
     "total": 18,
     "up": 17,
     "down": 1,
     "unknown": 0,
-    "durationMs": 17894
+    "durationMs": 17586
   }
 }

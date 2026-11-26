@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T12:28:20.056Z",
+  "generatedAt": "2026-11-26T02:38:18.410Z",
   "total": 121,
   "offers": [
     {
@@ -2457,6 +2457,307 @@
       "source": "official"
     },
     {
+      "id": "of_bytevirt_000",
+      "providerSlug": "bytevirt",
+      "title": "VPS-512-KVM-CN2 GIA LA",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 15,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 66,
+      "cycle": "yearly",
+      "perMonth": 5.5,
+      "perYear": 66,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_001",
+      "providerSlug": "bytevirt",
+      "title": "VPS-1024-KVM-CN2 GIA LA",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 12,
+      "cycle": "monthly",
+      "perMonth": 12,
+      "perYear": 144,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_002",
+      "providerSlug": "bytevirt",
+      "title": "VPS-2048-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 2,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 24,
+      "cycle": "monthly",
+      "perMonth": 24,
+      "perYear": 288,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_003",
+      "providerSlug": "bytevirt",
+      "title": "VPS-3072-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 3,
+      "disk": 60,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 36.3,
+      "cycle": "monthly",
+      "perMonth": 36.3,
+      "perYear": 435.6,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_004",
+      "providerSlug": "bytevirt",
+      "title": "VPS-4096-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 4,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 48.4,
+      "cycle": "monthly",
+      "perMonth": 48.4,
+      "perYear": 580.8,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_005",
+      "providerSlug": "bytevirt",
+      "title": "VPS-4C8G100G1T-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 8,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST"
+      ],
+      "price": 27.5,
+      "cycle": "monthly",
+      "perMonth": 27.5,
+      "perYear": 330,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_bytevirt_006",
+      "providerSlug": "bytevirt",
+      "title": "VPS-8C16G100G10T-KVM-CN2 GIA-LA",
+      "cpu": 1,
+      "ram": 16,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "US-WEST",
+        "RU"
+      ],
+      "price": 242,
+      "cycle": "monthly",
+      "perMonth": 242,
+      "perYear": 2904,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://bytevirt.com/store/",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_000",
+      "providerSlug": "colocrossing",
+      "title": "Starter",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 50,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "4TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 20,
+      "cycle": "monthly",
+      "perMonth": 20,
+      "perYear": 240,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_001",
+      "providerSlug": "colocrossing",
+      "title": "Standard",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "8TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 40,
+      "cycle": "monthly",
+      "perMonth": 40,
+      "perYear": 480,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_002",
+      "providerSlug": "colocrossing",
+      "title": "Standard+",
+      "cpu": 8,
+      "ram": 16,
+      "disk": 200,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "12TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 80,
+      "cycle": "monthly",
+      "perMonth": 80,
+      "perYear": 960,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_003",
+      "providerSlug": "colocrossing",
+      "title": "Professional",
+      "cpu": 16,
+      "ram": 32,
+      "disk": 400,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "20TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 160,
+      "cycle": "monthly",
+      "perMonth": 160,
+      "perYear": 1920,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_004",
+      "providerSlug": "colocrossing",
+      "title": "Enterprise",
+      "cpu": 24,
+      "ram": 64,
+      "disk": 800,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "30TB/月",
+      "regions": [
+        "RU"
+      ],
+      "price": 320,
+      "cycle": "monthly",
+      "perMonth": 320,
+      "perYear": 3840,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
       "id": "of_dedione_000",
       "providerSlug": "dedione",
       "title": "20260520-LAX.VPS.INTL.1C1G20G-Special-12.99",
@@ -2682,182 +2983,6 @@
       "source": "official"
     },
     {
-      "id": "of_bytevirt_000",
-      "providerSlug": "bytevirt",
-      "title": "VPS-512-KVM-CN2 GIA LA",
-      "cpu": 1,
-      "ram": 1,
-      "disk": 15,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "US-WEST"
-      ],
-      "price": 66,
-      "cycle": "yearly",
-      "perMonth": 5.5,
-      "perYear": 66,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://bytevirt.com/store/",
-      "source": "official"
-    },
-    {
-      "id": "of_bytevirt_001",
-      "providerSlug": "bytevirt",
-      "title": "VPS-1024-KVM-CN2 GIA LA",
-      "cpu": 1,
-      "ram": 1,
-      "disk": 20,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "US-WEST"
-      ],
-      "price": 12,
-      "cycle": "monthly",
-      "perMonth": 12,
-      "perYear": 144,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://bytevirt.com/store/",
-      "source": "official"
-    },
-    {
-      "id": "of_bytevirt_002",
-      "providerSlug": "bytevirt",
-      "title": "VPS-2048-KVM-CN2 GIA-LA",
-      "cpu": 1,
-      "ram": 2,
-      "disk": 40,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "US-WEST"
-      ],
-      "price": 24,
-      "cycle": "monthly",
-      "perMonth": 24,
-      "perYear": 288,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://bytevirt.com/store/",
-      "source": "official"
-    },
-    {
-      "id": "of_bytevirt_003",
-      "providerSlug": "bytevirt",
-      "title": "VPS-3072-KVM-CN2 GIA-LA",
-      "cpu": 1,
-      "ram": 3,
-      "disk": 60,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "US-WEST"
-      ],
-      "price": 36.3,
-      "cycle": "monthly",
-      "perMonth": 36.3,
-      "perYear": 435.6,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://bytevirt.com/store/",
-      "source": "official"
-    },
-    {
-      "id": "of_bytevirt_004",
-      "providerSlug": "bytevirt",
-      "title": "VPS-4096-KVM-CN2 GIA-LA",
-      "cpu": 1,
-      "ram": 4,
-      "disk": 100,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "US-WEST"
-      ],
-      "price": 48.4,
-      "cycle": "monthly",
-      "perMonth": 48.4,
-      "perYear": 580.8,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://bytevirt.com/store/",
-      "source": "official"
-    },
-    {
-      "id": "of_bytevirt_005",
-      "providerSlug": "bytevirt",
-      "title": "VPS-4C8G100G1T-KVM-CN2 GIA-LA",
-      "cpu": 1,
-      "ram": 8,
-      "disk": 100,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "US-WEST"
-      ],
-      "price": 27.5,
-      "cycle": "monthly",
-      "perMonth": 27.5,
-      "perYear": 330,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://bytevirt.com/store/",
-      "source": "official"
-    },
-    {
-      "id": "of_bytevirt_006",
-      "providerSlug": "bytevirt",
-      "title": "VPS-8C16G100G10T-KVM-CN2 GIA-LA",
-      "cpu": 1,
-      "ram": 16,
-      "disk": 100,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "US-WEST",
-        "RU"
-      ],
-      "price": 242,
-      "cycle": "monthly",
-      "perMonth": 242,
-      "perYear": 2904,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://bytevirt.com/store/",
-      "source": "official"
-    },
-    {
       "id": "of_ovhcloud_000",
       "providerSlug": "ovhcloud",
       "title": "VPS-1",
@@ -2955,131 +3080,6 @@
         "官方实时"
       ],
       "url": "https://www.ovhcloud.com/en/vps/",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_000",
-      "providerSlug": "colocrossing",
-      "title": "Starter",
-      "cpu": 2,
-      "ram": 4,
-      "disk": 50,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "4TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 20,
-      "cycle": "monthly",
-      "perMonth": 20,
-      "perYear": 240,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_001",
-      "providerSlug": "colocrossing",
-      "title": "Standard",
-      "cpu": 4,
-      "ram": 8,
-      "disk": 100,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "8TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 40,
-      "cycle": "monthly",
-      "perMonth": 40,
-      "perYear": 480,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_002",
-      "providerSlug": "colocrossing",
-      "title": "Standard+",
-      "cpu": 8,
-      "ram": 16,
-      "disk": 200,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "12TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 80,
-      "cycle": "monthly",
-      "perMonth": 80,
-      "perYear": 960,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_003",
-      "providerSlug": "colocrossing",
-      "title": "Professional",
-      "cpu": 16,
-      "ram": 32,
-      "disk": 400,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "20TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 160,
-      "cycle": "monthly",
-      "perMonth": 160,
-      "perYear": 1920,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_004",
-      "providerSlug": "colocrossing",
-      "title": "Enterprise",
-      "cpu": 24,
-      "ram": 64,
-      "disk": 800,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "30TB/月",
-      "regions": [
-        "RU"
-      ],
-      "price": 320,
-      "cycle": "monthly",
-      "perMonth": 320,
-      "perYear": 3840,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
       "source": "official"
     }
   ]
