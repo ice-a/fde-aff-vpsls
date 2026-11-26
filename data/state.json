@@ -2,102 +2,102 @@
   "providerStatus": {
     "racknerd": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "vultr": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "digitalocean": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "linode": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "hetzner": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "ovhcloud": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "contabo": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "bandwagon": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "vmiss": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "zgovps": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "dogyun": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "justhost": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "colocrossing": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "bytevirt": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "wapac": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "dedione": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     },
     "cloudserver": {
       "availability": "down",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
-      "failStreak": 5
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
+      "failStreak": 6
     },
     "hosthatch": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T02:44:40.237Z",
+      "lastCheckedAt": "2026-11-26T08:22:48.227Z",
       "failStreak": 0
     }
   },
   "lastRun": {
-    "startedAt": "2026-11-26T02:44:22.721Z",
-    "finishedAt": "2026-11-26T02:44:40.237Z",
+    "startedAt": "2026-11-26T08:22:30.869Z",
+    "finishedAt": "2026-11-26T08:22:48.228Z",
     "total": 18,
     "up": 17,
     "down": 1,
     "unknown": 0,
-    "durationMs": 17516
+    "durationMs": 17359
   }
 }
