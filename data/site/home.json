@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-26T02:38:18.410Z",
+  "generatedAt": "2026-11-26T02:44:42.793Z",
   "stats": {
     "offerCount": 121,
     "providerCount": 18,
     "regionCount": 5,
-    "updatedAt": "2026-11-26T02:38:15.402Z",
+    "updatedAt": "2026-11-26T02:44:40.237Z",
     "upCount": 17,
     "downCount": 1
   },
@@ -653,28 +653,28 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-11-26T02:37:57.816Z",
-    "finishedAt": "2026-11-26T02:38:15.402Z",
+    "startedAt": "2026-11-26T02:44:22.721Z",
+    "finishedAt": "2026-11-26T02:44:40.237Z",
     "total": 18,
     "up": 17,
     "down": 1,
     "unknown": 0,
-    "durationMs": 17586
+    "durationMs": 17516
   },
   "official": {
-    "updatedAt": "2026-11-26T02:38:18.410Z",
+    "updatedAt": "2026-11-26T02:44:42.793Z",
     "slugs": [
       "bandwagon",
-      "bytevirt",
-      "colocrossing",
       "dedione",
+      "colocrossing",
+      "bytevirt",
       "ovhcloud"
     ],
     "counts": {
       "bandwagon": 51,
-      "bytevirt": 7,
-      "colocrossing": 5,
       "dedione": 9,
+      "colocrossing": 5,
+      "bytevirt": 7,
       "ovhcloud": 4
     },
     "offerCount": 76
