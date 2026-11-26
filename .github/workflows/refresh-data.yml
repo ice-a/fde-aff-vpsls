@@ -46,7 +46,14 @@ jobs:
           git add data
           if git diff --staged --quiet; then
             echo "数据无变化，跳过提交"
-            exit 0
+          else
+            git commit -m "chore(data): 每日刷新检测结果与套餐价"
+            git push
           fi
-          git commit -m "chore(data): 每日刷新检测结果与套餐价"
-          git push
+
+      # GITHUB_TOKEN 的 push 不会触发新的工作流（GitHub 防递归设计），
+      # 所以这里显式 dispatch 一次 deploy-pages；workflow_dispatch 是官方豁免项。
+      - name: Trigger Pages rebuild
+        run: gh workflow run deploy-pages --repo ${{ github.repository }} --ref main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

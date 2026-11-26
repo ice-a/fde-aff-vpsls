@@ -54,6 +54,10 @@ async function main() {
     state.lastRun = check.run
     log(`检测完成：up=${check.run.up} down=${check.run.down} total=${check.run.total} (${Math.round(check.run.durationMs / 1000)}s)`)
   }
+  const bad = Object.entries(check.details).filter(([, r]) => !r.ok)
+  if (bad.length) {
+    log(`探测异常 ${bad.length} 家：${bad.map(([slug, r]) => `${slug}=${r.error ?? `HTTP${r.status}`}`).join(' ')}`)
+  }
   saveState(state)
 
   // 2. 官方套餐抓取

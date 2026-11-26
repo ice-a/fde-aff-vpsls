@@ -1,4 +1,6 @@
-import type { CheckRun, Provider } from '#shared/types'
+import { request as httpRequest } from 'node:http'
+import { request as httpsRequest } from 'node:https'
+import type { Provider } from '#shared/types'
 import type { PersistedState, ProviderStatus } from './state.ts'
 
 /**
@@ -7,28 +9,79 @@ import type { PersistedState, ProviderStatus } from './state.ts'
  *  - 单次超时 8s，失败重试 1 次；
  *  - 连续 3 轮全失败标 down，一旦成功立即回 up；
  *  - 全员探测失败 = 本机网络/环境问题，这种情况下不动状态，避免误标全站 DOWN。
+ *
+ * 为什么不用 fetch：Node 内置 fetch（undici）默认用 ALPN 协商 h2，
+ * 遇到只会 http/1.1、且 h2 实现有问题的服务器时会「协商成功然后一直挂到超时」，
+ * 连真实状态码都拿不到（实测 cloudserver.com 就是这样：curl --http1.1 秒回 410，
+ * 而 fetch / curl --http2 全部挂死）。这里只用 node:https / node:http（http/1.1），
+ * 手动跟随跳转，拿到真实状态码再判定。
  */
 
 const TIMEOUT_MS = 8000
 const RETRIES = 1
 const FAIL_DOWN_AFTER = 3
 const CONCURRENCY = 6
+const MAX_REDIRECTS = 3
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 
-async function probe(url: string): Promise<boolean> {
-  for (let attempt = 0; attempt <= RETRIES; attempt++) {
-    try {
-      const res = await fetch(url, {
-        method: 'GET',
-        redirect: 'follow',
-        signal: AbortSignal.timeout(TIMEOUT_MS),
-        headers: { 'user-agent': 'VPSStatusBot/1.0 (+daily availability check)' }
-      })
-      if (res.ok || res.status === 401 || res.status === 403) return true
-    } catch {
-      /* 网络层失败/超时 → 走重试 */
+export interface ProbeResult {
+  ok: boolean
+  status: number | null
+  error: string | null
+}
+
+/** 发起一次 http/1.1 请求，只看状态码，不读 body */
+function requestOnce(url: string, redirectsLeft: number): Promise<ProbeResult> {
+  return new Promise(resolve => {
+    const mod = url.startsWith('http://') ? httpRequest : httpsRequest
+    let settled = false
+    const done = (r: ProbeResult) => {
+      if (!settled) {
+        settled = true
+        resolve(r)
+      }
     }
+
+    const req = mod(
+      url,
+      {
+        method: 'GET',
+        headers: { 'user-agent': UA, accept: 'text/html,application/xhtml+xml,*/*;q=0.8' },
+        timeout: TIMEOUT_MS
+      },
+      res => {
+        const status = res.statusCode ?? 0
+        res.destroy() // 不关心正文，直接断开
+        const location = res.headers.location
+        if (status >= 300 && status < 400 && location && redirectsLeft > 0) {
+          try {
+            requestOnce(new URL(location, url).toString(), redirectsLeft - 1).then(done)
+          } catch {
+            done({ ok: false, status, error: 'bad-redirect' })
+          }
+          return
+        }
+        const ok = (status >= 200 && status < 400) || status === 401 || status === 403
+        done({ ok, status, error: ok ? null : `HTTP ${status}` })
+      }
+    )
+
+    req.on('timeout', () => {
+      req.destroy()
+      done({ ok: false, status: null, error: 'timeout' })
+    })
+    req.on('error', err => done({ ok: false, status: null, error: err.code || err.message }))
+    req.end()
+  })
+}
+
+async function probe(url: string): Promise<ProbeResult> {
+  let last: ProbeResult = { ok: false, status: null, error: 'not-attempted' }
+  for (let attempt = 0; attempt <= RETRIES; attempt++) {
+    last = await requestOnce(url, MAX_REDIRECTS)
+    if (last.ok) return last
   }
-  return false
+  return last
 }
 
 export interface CheckResult {
@@ -36,6 +89,8 @@ export interface CheckResult {
   providerStatus: Record<string, ProviderStatus>
   /** true = 全员探测失败，状态未更新 */
   networkFailure: boolean
+  /** 每家厂商的探测明细（状态码/错误），用于日志排查 */
+  details: Record<string, ProbeResult>
 }
 
 export async function runCheck(
@@ -44,7 +99,7 @@ export async function runCheck(
 ): Promise<CheckResult> {
   const startedAt = new Date()
   const queue = [...providers]
-  const results = new Map<string, boolean>()
+  const results = new Map<string, ProbeResult>()
 
   const workers = Array.from({ length: CONCURRENCY }, async () => {
     while (queue.length) {
@@ -54,7 +109,7 @@ export async function runCheck(
   })
   await Promise.all(workers)
 
-  const okCount = [...results.values()].filter(Boolean).length
+  const okCount = [...results.values()].filter(r => r.ok).length
   const networkFailure = okCount === 0 && results.size > 0
 
   const providerStatus: Record<string, ProviderStatus> = { ...prev.providerStatus }
@@ -64,15 +119,15 @@ export async function runCheck(
 
   if (!networkFailure) {
     for (const p of providers) {
-      const ok = results.get(p.slug) ?? null
+      const res = results.get(p.slug)
       const before = providerStatus[p.slug]
       let availability: Provider['availability']
       let failStreak: number
 
-      if (ok === null) {
+      if (!res) {
         availability = before?.availability ?? p.availability
         failStreak = before?.failStreak ?? p.failStreak
-      } else if (ok) {
+      } else if (res.ok) {
         availability = 'up'
         failStreak = 0
       } else {
@@ -104,5 +159,8 @@ export async function runCheck(
     durationMs: finishedAt.getTime() - startedAt.getTime()
   }
 
-  return { run, providerStatus, networkFailure }
+  const details: Record<string, ProbeResult> = {}
+  for (const [slug, res] of results) details[slug] = res
+
+  return { run, providerStatus, networkFailure, details }
 }
