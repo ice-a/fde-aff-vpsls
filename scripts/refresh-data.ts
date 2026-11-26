@@ -1,6 +1,6 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { loadState, saveState } from './lib/state.ts'
+import { loadState, pruneState, saveState } from './lib/state.ts'
 import { runCheck } from './lib/check.ts'
 import { refetchOfficial } from './lib/scrape.ts'
 import { fetchRates, type RatesState } from './lib/rates.ts'
@@ -58,6 +58,8 @@ async function main() {
   if (bad.length) {
     log(`探测异常 ${bad.length} 家：${bad.map(([slug, r]) => `${slug}=${r.error ?? `HTTP${r.status}`}`).join(' ')}`)
   }
+  const dropped = pruneState(state)
+  if (dropped.length) log(`清理已下架厂商的状态记录：${dropped.join(',')}`)
   saveState(state)
 
   // 2. 官方套餐抓取

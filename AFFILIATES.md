@@ -18,7 +18,6 @@
 | **Bytevirt** | https://bytevirt.com/affiliates.php | WHMCS 联盟余额，比例登录后见 | 注册 → 后台 Affiliates 页激活取链接 |
 | **WAP.AC** | https://wap.ac/affiliates.php | WHMCS 联盟余额，比例登录后见 | 注册 → 「用户推广」页激活 |
 | **DediOne** | https://dedione.com/affiliates.php | WHMCS 联盟余额，比例登录后见 | 注册 → 登录后访问 affiliates.php 激活 |
-| **CloudServer** | https://cloudserver.net/billing/affiliates.php（注意：官网是 **.net**，.com 是停放域名） | WHMCS 联盟余额，比例登录后见 | 在 cloudserver.net 注册 → billing 面板 → Affiliates 激活 |
 | **VMISS** | app.vmiss.com 客户区导航「Affiliates」（页面对未登录/爬虫 403） | 不明，登录后见 | 注册登录 app.vmiss.com → 页脚 Affiliates 进面板 |
 
 ## B. 需要申请/审核或无标准计划

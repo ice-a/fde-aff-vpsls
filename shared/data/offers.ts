@@ -103,10 +103,6 @@ const ROWS: Row[] = [
   ['dedione', '洛杉矶 NVMe · 年付', 2, 4, 40, 'NVMe', 1000, '4TB/月', ['US-WEST'], 23.88, 'yearly', 'linux', ['NVMe'], 'https://dedione.com'],
   ['dedione', '密苏里大盘 · 年付', 2, 4, 200, 'NVMe', 1000, '6TB/月', ['US-EAST'], 39.99, 'yearly', 'linux', ['大硬盘'], 'https://dedione.com'],
 
-  // —— CloudServer ——
-  ['cloudserver', '多机房入门 · 年付', 1, 1, 20, 'SSD', 1000, '2TB/月', ['US-WEST'], 10, 'yearly', 'linux', ['超低价'], 'https://cloudserver.com', true],
-  ['cloudserver', '多机房标准 · 年付', 2, 2, 40, 'SSD', 1000, '3TB/月', ['US-WEST'], 18, 'yearly', 'linux', ['超低价'], 'https://cloudserver.com'],
-
   // —— HostHatch ——
   ['hosthatch', '欧洲 HV1 · 半年付', 1, 1, 25, 'SSD', 1000, '2TB/月', ['EU'], 3.5, 'semiannual', 'linux', ['欧洲便宜'], 'https://hosthatch.com'],
   ['hosthatch', '欧洲 HV2 · 半年付', 2, 4, 50, 'SSD', 1000, '4TB/月', ['EU'], 6, 'semiannual', 'linux', ['欧洲便宜'], 'https://hosthatch.com'],

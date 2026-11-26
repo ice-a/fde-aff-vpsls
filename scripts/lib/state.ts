@@ -1,6 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import type { CheckRun, Provider } from '#shared/types'
+import { SEED_PROVIDERS } from '#shared/data/providers'
 
 /**
  * 每日管道的持久化状态（随仓库提交，跨次运行保留）。
@@ -40,4 +41,12 @@ export function loadState(): PersistedState {
 export function saveState(state: PersistedState): void {
   mkdirSync(dirname(STATE_FILE), { recursive: true })
   writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n', 'utf-8')
+}
+
+/** 目录里已下架的厂商，状态记录一并清掉，别在 state.json 里留孤儿 */
+export function pruneState(state: PersistedState): string[] {
+  const alive = new Set(SEED_PROVIDERS.map(p => p.slug))
+  const dropped = Object.keys(state.providerStatus).filter(slug => !alive.has(slug))
+  for (const slug of dropped) delete state.providerStatus[slug]
+  return dropped
 }

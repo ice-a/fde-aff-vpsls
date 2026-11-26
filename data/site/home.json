@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-26T08:22:51.301Z",
+  "generatedAt": "2026-11-26T09:16:48.696Z",
   "stats": {
-    "offerCount": 121,
-    "providerCount": 18,
+    "offerCount": 119,
+    "providerCount": 17,
     "regionCount": 5,
-    "updatedAt": "2026-11-26T08:22:48.228Z",
+    "updatedAt": "2026-11-26T09:16:40.345Z",
     "upCount": 17,
-    "downCount": 1
+    "downCount": 0
   },
   "cheapest": [
     {
@@ -296,32 +296,6 @@
       "source": "seed",
       "perYear": 504,
       "hasAff": true
-    },
-    {
-      "id": "of_054",
-      "providerSlug": "cloudserver",
-      "title": "多机房入门 · 年付",
-      "cpu": 1,
-      "ram": 1,
-      "disk": 20,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "2TB/月",
-      "regions": [
-        "US-WEST"
-      ],
-      "price": 10,
-      "cycle": "yearly",
-      "perMonth": 0.83,
-      "os": "linux",
-      "tags": [
-        "超低价"
-      ],
-      "url": "https://cloudserver.com",
-      "featured": true,
-      "source": "seed",
-      "perYear": 10,
-      "hasAff": false
     },
     {
       "id": "of_048",
@@ -637,44 +611,31 @@
         "EU",
         "US-EAST"
       ]
-    },
-    {
-      "slug": "cloudserver",
-      "name": "CloudServer",
-      "tagline": "多机房入门年付",
-      "availability": "down",
-      "offerCount": 2,
-      "cheapestPerMonth": 0.83,
-      "cheapestPerYear": 10,
-      "hasAff": false,
-      "regions": [
-        "US-WEST"
-      ]
     }
   ],
   "lastRun": {
-    "startedAt": "2026-11-26T08:22:30.869Z",
-    "finishedAt": "2026-11-26T08:22:48.228Z",
-    "total": 18,
+    "startedAt": "2026-11-26T09:16:35.537Z",
+    "finishedAt": "2026-11-26T09:16:40.345Z",
+    "total": 17,
     "up": 17,
-    "down": 1,
+    "down": 0,
     "unknown": 0,
-    "durationMs": 17359
+    "durationMs": 4808
   },
   "official": {
-    "updatedAt": "2026-11-26T08:22:51.301Z",
+    "updatedAt": "2026-11-26T09:16:48.695Z",
     "slugs": [
       "bandwagon",
+      "bytevirt",
       "dedione",
       "colocrossing",
-      "bytevirt",
       "ovhcloud"
     ],
     "counts": {
       "bandwagon": 51,
+      "bytevirt": 7,
       "dedione": 9,
       "colocrossing": 5,
-      "bytevirt": 7,
       "ovhcloud": 4
     },
     "offerCount": 76

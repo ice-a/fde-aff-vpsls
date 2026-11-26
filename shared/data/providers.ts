@@ -23,6 +23,5 @@ export const SEED_PROVIDERS: Provider[] = [
   { slug: 'bytevirt', name: 'Bytevirt', tagline: '小众精品多地区', regions: ['ASIA', 'US-WEST'], availability: 'unknown', lastCheckedAt: null, failStreak: 0, url: 'https://bytevirt.com' },
   { slug: 'wapac', name: 'WAP.AC', tagline: '台湾机房超低年付', regions: ['ASIA'], availability: 'unknown', lastCheckedAt: null, failStreak: 0, url: 'https://wap.ac' },
   { slug: 'dedione', name: 'DediOne', tagline: '密苏里大容量 NVMe', regions: ['US-EAST'], availability: 'unknown', lastCheckedAt: null, failStreak: 0, url: 'https://dedione.com' },
-  { slug: 'cloudserver', name: 'CloudServer', tagline: '多机房入门年付', regions: ['US-WEST'], availability: 'unknown', lastCheckedAt: null, failStreak: 0, url: 'https://cloudserver.com' },
   { slug: 'hosthatch', name: 'HostHatch', tagline: '欧洲大硬盘便宜货', regions: ['EU', 'US-EAST'], availability: 'unknown', lastCheckedAt: null, failStreak: 0, url: 'https://hosthatch.com' }
 ]
