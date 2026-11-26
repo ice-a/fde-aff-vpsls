@@ -8,7 +8,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write # 提交刷新后的数据
+  actions: write  # dispatch deploy-pages 触发重建（声明 permissions 会覆盖默认集，两个都要显式给）
 
 concurrency:
   group: refresh-data
