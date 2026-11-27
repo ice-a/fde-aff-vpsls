@@ -2,97 +2,97 @@
   "providerStatus": {
     "racknerd": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "vultr": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "digitalocean": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "linode": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "hetzner": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "ovhcloud": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "contabo": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "bandwagon": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "vmiss": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "zgovps": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "dogyun": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "justhost": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "colocrossing": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "bytevirt": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "wapac": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "dedione": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     },
     "hosthatch": {
       "availability": "up",
-      "lastCheckedAt": "2026-11-26T09:16:40.345Z",
+      "lastCheckedAt": "2026-11-27T02:45:07.297Z",
       "failStreak": 0
     }
   },
   "lastRun": {
-    "startedAt": "2026-11-26T09:16:35.537Z",
-    "finishedAt": "2026-11-26T09:16:40.345Z",
+    "startedAt": "2026-11-27T02:45:01.983Z",
+    "finishedAt": "2026-11-27T02:45:07.298Z",
     "total": 17,
     "up": 17,
     "down": 0,
     "unknown": 0,
-    "durationMs": 4808
+    "durationMs": 5315
   }
 }

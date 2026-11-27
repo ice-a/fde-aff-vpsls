@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:16:48.696Z",
+  "generatedAt": "2026-11-27T02:45:10.263Z",
   "total": 119,
   "offers": [
     {
@@ -2581,6 +2581,131 @@
       "source": "official"
     },
     {
+      "id": "of_colocrossing_000",
+      "providerSlug": "colocrossing",
+      "title": "Starter",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 50,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "4TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 20,
+      "cycle": "monthly",
+      "perMonth": 20,
+      "perYear": 240,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_001",
+      "providerSlug": "colocrossing",
+      "title": "Standard",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "8TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 40,
+      "cycle": "monthly",
+      "perMonth": 40,
+      "perYear": 480,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_002",
+      "providerSlug": "colocrossing",
+      "title": "Standard+",
+      "cpu": 8,
+      "ram": 16,
+      "disk": 200,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "12TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 80,
+      "cycle": "monthly",
+      "perMonth": 80,
+      "perYear": 960,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_003",
+      "providerSlug": "colocrossing",
+      "title": "Professional",
+      "cpu": 16,
+      "ram": 32,
+      "disk": 400,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "20TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 160,
+      "cycle": "monthly",
+      "perMonth": 160,
+      "perYear": 1920,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
+      "id": "of_colocrossing_004",
+      "providerSlug": "colocrossing",
+      "title": "Enterprise",
+      "cpu": 24,
+      "ram": 64,
+      "disk": 800,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "30TB/月",
+      "regions": [
+        "RU"
+      ],
+      "price": 320,
+      "cycle": "monthly",
+      "perMonth": 320,
+      "perYear": 3840,
+      "hasAff": true,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
+      "source": "official"
+    },
+    {
       "id": "of_dedione_000",
       "providerSlug": "dedione",
       "title": "20260520-LAX.VPS.INTL.1C1G20G-Special-12.99",
@@ -2803,131 +2928,6 @@
         "官方实时"
       ],
       "url": "https://dedione.com/store/",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_000",
-      "providerSlug": "colocrossing",
-      "title": "Starter",
-      "cpu": 2,
-      "ram": 4,
-      "disk": 50,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "4TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 20,
-      "cycle": "monthly",
-      "perMonth": 20,
-      "perYear": 240,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_001",
-      "providerSlug": "colocrossing",
-      "title": "Standard",
-      "cpu": 4,
-      "ram": 8,
-      "disk": 100,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "8TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 40,
-      "cycle": "monthly",
-      "perMonth": 40,
-      "perYear": 480,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_002",
-      "providerSlug": "colocrossing",
-      "title": "Standard+",
-      "cpu": 8,
-      "ram": 16,
-      "disk": 200,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "12TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 80,
-      "cycle": "monthly",
-      "perMonth": 80,
-      "perYear": 960,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_003",
-      "providerSlug": "colocrossing",
-      "title": "Professional",
-      "cpu": 16,
-      "ram": 32,
-      "disk": 400,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "20TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 160,
-      "cycle": "monthly",
-      "perMonth": 160,
-      "perYear": 1920,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_004",
-      "providerSlug": "colocrossing",
-      "title": "Enterprise",
-      "cpu": 24,
-      "ram": 64,
-      "disk": 800,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "30TB/月",
-      "regions": [
-        "RU"
-      ],
-      "price": 320,
-      "cycle": "monthly",
-      "perMonth": 320,
-      "perYear": 3840,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
       "source": "official"
     },
     {
