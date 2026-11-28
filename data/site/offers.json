@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T02:45:10.263Z",
-  "total": 119,
+  "generatedAt": "2026-11-28T02:35:45.806Z",
+  "total": 117,
   "offers": [
     {
       "id": "of_000",
@@ -911,6 +911,84 @@
       "featured": false,
       "source": "seed",
       "perYear": 39.6,
+      "hasAff": true
+    },
+    {
+      "id": "of_042",
+      "providerSlug": "colocrossing",
+      "title": "美东入门 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "4TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 11.99,
+      "cycle": "yearly",
+      "perMonth": 1,
+      "os": "linux",
+      "tags": [
+        "便宜"
+      ],
+      "url": "https://colocrossing.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 11.99,
+      "hasAff": true
+    },
+    {
+      "id": "of_043",
+      "providerSlug": "colocrossing",
+      "title": "美东标准 · 年付",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "6TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 23.88,
+      "cycle": "yearly",
+      "perMonth": 1.99,
+      "os": "linux",
+      "tags": [
+        "便宜"
+      ],
+      "url": "https://colocrossing.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 23.88,
+      "hasAff": true
+    },
+    {
+      "id": "of_044",
+      "providerSlug": "colocrossing",
+      "title": "美东高配 · 年付",
+      "cpu": 4,
+      "ram": 8,
+      "disk": 100,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "10TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 47.88,
+      "cycle": "yearly",
+      "perMonth": 3.99,
+      "os": "linux",
+      "tags": [
+        "便宜"
+      ],
+      "url": "https://colocrossing.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 47.88,
       "hasAff": true
     },
     {
@@ -2405,6 +2483,106 @@
       "source": "official"
     },
     {
+      "id": "of_ovhcloud_000",
+      "providerSlug": "ovhcloud",
+      "title": "VPS-1",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "EU"
+      ],
+      "price": 4.54,
+      "cycle": "monthly",
+      "perMonth": 4.54,
+      "perYear": 54.48,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://www.ovhcloud.com/en/vps/",
+      "source": "official"
+    },
+    {
+      "id": "of_ovhcloud_001",
+      "providerSlug": "ovhcloud",
+      "title": "VPS-2",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "EU"
+      ],
+      "price": 8.5,
+      "cycle": "monthly",
+      "perMonth": 8.5,
+      "perYear": 102,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://www.ovhcloud.com/en/vps/",
+      "source": "official"
+    },
+    {
+      "id": "of_ovhcloud_002",
+      "providerSlug": "ovhcloud",
+      "title": "VPS-3",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "EU"
+      ],
+      "price": 12.32,
+      "cycle": "monthly",
+      "perMonth": 12.32,
+      "perYear": 147.84,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://www.ovhcloud.com/en/vps/",
+      "source": "official"
+    },
+    {
+      "id": "of_ovhcloud_003",
+      "providerSlug": "ovhcloud",
+      "title": "VPS-4",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "—",
+      "regions": [
+        "EU"
+      ],
+      "price": 23.37,
+      "cycle": "monthly",
+      "perMonth": 23.37,
+      "perYear": 280.44,
+      "hasAff": false,
+      "os": "linux",
+      "tags": [
+        "官方实时"
+      ],
+      "url": "https://www.ovhcloud.com/en/vps/",
+      "source": "official"
+    },
+    {
       "id": "of_bytevirt_000",
       "providerSlug": "bytevirt",
       "title": "VPS-512-KVM-CN2 GIA LA",
@@ -2578,131 +2756,6 @@
         "官方实时"
       ],
       "url": "https://bytevirt.com/store/",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_000",
-      "providerSlug": "colocrossing",
-      "title": "Starter",
-      "cpu": 2,
-      "ram": 4,
-      "disk": 50,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "4TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 20,
-      "cycle": "monthly",
-      "perMonth": 20,
-      "perYear": 240,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_001",
-      "providerSlug": "colocrossing",
-      "title": "Standard",
-      "cpu": 4,
-      "ram": 8,
-      "disk": 100,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "8TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 40,
-      "cycle": "monthly",
-      "perMonth": 40,
-      "perYear": 480,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_002",
-      "providerSlug": "colocrossing",
-      "title": "Standard+",
-      "cpu": 8,
-      "ram": 16,
-      "disk": 200,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "12TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 80,
-      "cycle": "monthly",
-      "perMonth": 80,
-      "perYear": 960,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_003",
-      "providerSlug": "colocrossing",
-      "title": "Professional",
-      "cpu": 16,
-      "ram": 32,
-      "disk": 400,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "20TB/月",
-      "regions": [
-        "US-EAST"
-      ],
-      "price": 160,
-      "cycle": "monthly",
-      "perMonth": 160,
-      "perYear": 1920,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
-      "source": "official"
-    },
-    {
-      "id": "of_colocrossing_004",
-      "providerSlug": "colocrossing",
-      "title": "Enterprise",
-      "cpu": 24,
-      "ram": 64,
-      "disk": 800,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "30TB/月",
-      "regions": [
-        "RU"
-      ],
-      "price": 320,
-      "cycle": "monthly",
-      "perMonth": 320,
-      "perYear": 3840,
-      "hasAff": true,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://cloud.colocrossing.com/cart.php?gid=1",
       "source": "official"
     },
     {
@@ -2928,106 +2981,6 @@
         "官方实时"
       ],
       "url": "https://dedione.com/store/",
-      "source": "official"
-    },
-    {
-      "id": "of_ovhcloud_000",
-      "providerSlug": "ovhcloud",
-      "title": "VPS-1",
-      "cpu": 1,
-      "ram": 1,
-      "disk": 20,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "EU"
-      ],
-      "price": 4.54,
-      "cycle": "monthly",
-      "perMonth": 4.54,
-      "perYear": 54.48,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://www.ovhcloud.com/en/vps/",
-      "source": "official"
-    },
-    {
-      "id": "of_ovhcloud_001",
-      "providerSlug": "ovhcloud",
-      "title": "VPS-2",
-      "cpu": 1,
-      "ram": 1,
-      "disk": 20,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "EU"
-      ],
-      "price": 8.5,
-      "cycle": "monthly",
-      "perMonth": 8.5,
-      "perYear": 102,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://www.ovhcloud.com/en/vps/",
-      "source": "official"
-    },
-    {
-      "id": "of_ovhcloud_002",
-      "providerSlug": "ovhcloud",
-      "title": "VPS-3",
-      "cpu": 1,
-      "ram": 1,
-      "disk": 20,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "EU"
-      ],
-      "price": 12.32,
-      "cycle": "monthly",
-      "perMonth": 12.32,
-      "perYear": 147.84,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://www.ovhcloud.com/en/vps/",
-      "source": "official"
-    },
-    {
-      "id": "of_ovhcloud_003",
-      "providerSlug": "ovhcloud",
-      "title": "VPS-4",
-      "cpu": 1,
-      "ram": 1,
-      "disk": 20,
-      "diskType": "SSD",
-      "bandwidth": 1000,
-      "traffic": "—",
-      "regions": [
-        "EU"
-      ],
-      "price": 23.37,
-      "cycle": "monthly",
-      "perMonth": 23.37,
-      "perYear": 280.44,
-      "hasAff": false,
-      "os": "linux",
-      "tags": [
-        "官方实时"
-      ],
-      "url": "https://www.ovhcloud.com/en/vps/",
       "source": "official"
     }
   ]

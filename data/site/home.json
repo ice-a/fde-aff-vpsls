@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-27T02:45:10.263Z",
+  "generatedAt": "2026-11-28T02:35:45.806Z",
   "stats": {
-    "offerCount": 119,
+    "offerCount": 117,
     "providerCount": 17,
     "regionCount": 5,
-    "updatedAt": "2026-11-27T02:45:07.298Z",
+    "updatedAt": "2026-11-28T02:35:43.906Z",
     "upCount": 17,
     "downCount": 0
   },
@@ -33,6 +33,32 @@
       "featured": true,
       "source": "seed",
       "perYear": 10.98,
+      "hasAff": true
+    },
+    {
+      "id": "of_042",
+      "providerSlug": "colocrossing",
+      "title": "美东入门 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "4TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 11.99,
+      "cycle": "yearly",
+      "perMonth": 1,
+      "os": "linux",
+      "tags": [
+        "便宜"
+      ],
+      "url": "https://colocrossing.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 11.99,
       "hasAff": true
     },
     {
@@ -114,6 +140,32 @@
       "hasAff": true
     },
     {
+      "id": "of_043",
+      "providerSlug": "colocrossing",
+      "title": "美东标准 · 年付",
+      "cpu": 2,
+      "ram": 4,
+      "disk": 40,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "6TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 23.88,
+      "cycle": "yearly",
+      "perMonth": 1.99,
+      "os": "linux",
+      "tags": [
+        "便宜"
+      ],
+      "url": "https://colocrossing.com",
+      "featured": false,
+      "source": "seed",
+      "perYear": 23.88,
+      "hasAff": true
+    },
+    {
       "id": "of_002",
       "providerSlug": "racknerd",
       "title": "KVM · 美东年付大流量",
@@ -164,58 +216,6 @@
       "source": "seed",
       "perYear": 39.6,
       "hasAff": true
-    },
-    {
-      "id": "of_033",
-      "providerSlug": "zgovps",
-      "title": "洛杉矶 CN2 GIA · 年付",
-      "cpu": 2,
-      "ram": 2,
-      "disk": 40,
-      "diskType": "NVMe",
-      "bandwidth": 1000,
-      "traffic": "1TB/月",
-      "regions": [
-        "US-WEST"
-      ],
-      "price": 42,
-      "cycle": "yearly",
-      "perMonth": 3.5,
-      "os": "linux",
-      "tags": [
-        "CN2 GIA"
-      ],
-      "url": "https://zgovps.com",
-      "featured": true,
-      "source": "seed",
-      "perYear": 42,
-      "hasAff": true
-    },
-    {
-      "id": "of_034",
-      "providerSlug": "zgovps",
-      "title": "洛杉矶 CN2 GIA · 高配",
-      "cpu": 4,
-      "ram": 8,
-      "disk": 80,
-      "diskType": "NVMe",
-      "bandwidth": 1000,
-      "traffic": "2TB/月",
-      "regions": [
-        "US-WEST"
-      ],
-      "price": 96,
-      "cycle": "yearly",
-      "perMonth": 8,
-      "os": "linux",
-      "tags": [
-        "CN2 GIA"
-      ],
-      "url": "https://zgovps.com",
-      "featured": false,
-      "source": "seed",
-      "perYear": 96,
-      "hasAff": true
     }
   ],
   "featured": [
@@ -243,6 +243,32 @@
       "featured": true,
       "source": "seed",
       "perYear": 10.98,
+      "hasAff": true
+    },
+    {
+      "id": "of_042",
+      "providerSlug": "colocrossing",
+      "title": "美东入门 · 年付",
+      "cpu": 1,
+      "ram": 1,
+      "disk": 20,
+      "diskType": "SSD",
+      "bandwidth": 1000,
+      "traffic": "4TB/月",
+      "regions": [
+        "US-EAST"
+      ],
+      "price": 11.99,
+      "cycle": "yearly",
+      "perMonth": 1,
+      "os": "linux",
+      "tags": [
+        "便宜"
+      ],
+      "url": "https://colocrossing.com",
+      "featured": true,
+      "source": "seed",
+      "perYear": 11.99,
       "hasAff": true
     },
     {
@@ -378,19 +404,6 @@
   ],
   "providers": [
     {
-      "slug": "colocrossing",
-      "name": "ColoCrossing",
-      "tagline": "美东经济型老牌机房",
-      "availability": "up",
-      "offerCount": 5,
-      "cheapestPerMonth": 20,
-      "cheapestPerYear": 240,
-      "hasAff": true,
-      "regions": [
-        "US-EAST"
-      ]
-    },
-    {
       "slug": "racknerd",
       "name": "RackNerd",
       "tagline": "美西低价年付常年有货",
@@ -444,6 +457,19 @@
       "regions": [
         "RU",
         "EU"
+      ]
+    },
+    {
+      "slug": "colocrossing",
+      "name": "ColoCrossing",
+      "tagline": "美东经济型老牌机房",
+      "availability": "up",
+      "offerCount": 3,
+      "cheapestPerMonth": 1,
+      "cheapestPerYear": 11.99,
+      "hasAff": true,
+      "regions": [
+        "US-EAST"
       ]
     },
     {
@@ -614,30 +640,28 @@
     }
   ],
   "lastRun": {
-    "startedAt": "2026-11-27T02:45:01.983Z",
-    "finishedAt": "2026-11-27T02:45:07.298Z",
+    "startedAt": "2026-11-28T02:35:41.950Z",
+    "finishedAt": "2026-11-28T02:35:43.906Z",
     "total": 17,
     "up": 17,
     "down": 0,
     "unknown": 0,
-    "durationMs": 5315
+    "durationMs": 1956
   },
   "official": {
-    "updatedAt": "2026-11-27T02:45:10.263Z",
+    "updatedAt": "2026-11-28T02:35:45.805Z",
     "slugs": [
       "bandwagon",
+      "ovhcloud",
       "bytevirt",
-      "colocrossing",
-      "dedione",
-      "ovhcloud"
+      "dedione"
     ],
     "counts": {
       "bandwagon": 51,
+      "ovhcloud": 4,
       "bytevirt": 7,
-      "colocrossing": 5,
-      "dedione": 9,
-      "ovhcloud": 4
+      "dedione": 9
     },
-    "offerCount": 76
+    "offerCount": 71
   }
 }
